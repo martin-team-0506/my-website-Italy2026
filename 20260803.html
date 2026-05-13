@@ -1,0 +1,691 @@
+<!--Google Maps links checked/updated: 2026-05-13
+1. 米蘭馬爾彭薩機場 MXP（使用者指定短連結）: https://maps.app.goo.gl/P3zqufozNqK7Vxfj8
+2. 米蘭中央車站: https://www.google.com/maps/search/?api=1&query=Milano%20Centrale%20Station%20Milan%20Italy
+3. All'Antico Vinaio 米蘭中央車站店: https://www.google.com/maps/search/?api=1&query=All%27Antico%20Vinaio%20Milano%20Centrale%20Milan%20Italy
+4. 維洛納新門車站: https://www.google.com/maps/search/?api=1&query=Verona%20Porta%20Nuova%20railway%20station%20Verona%20Italy
+5. 維洛納城市: https://www.google.com/maps/search/?api=1&query=Verona%20Italy
+6. 茱麗葉的故居: https://www.google.com/maps/search/?api=1&query=Casa%20di%20Giulietta%20Verona%20Italy
+7. 朗貝爾蒂塔: https://www.google.com/maps/search/?api=1&query=Torre%20dei%20Lamberti%20Verona%20Italy
+8. 百草廣場: https://www.google.com/maps/search/?api=1&query=Piazza%20delle%20Erbe%20Verona%20Italy
+9. 領主廣場: https://www.google.com/maps/search/?api=1&query=Piazza%20dei%20Signori%20Verona%20Italy
+10. 聖亞納大教堂: https://www.google.com/maps/search/?api=1&query=Basilica%20di%20Sant%27Anastasia%20Verona%20Italy
+11. 維洛納圓形競技場: https://www.google.com/maps/search/?api=1&query=Arena%20di%20Verona%20Verona%20Italy
+12. Esselunga 超市: https://www.google.com/maps/search/?api=1&query=Esselunga%20Verona%20Italy
+13. Sole Ristorante SriLanka: https://www.google.com/maps/search/?api=1&query=Sole%20Ristorante%20SriLanka%20Verona%20Italy
+14. 丹尼斯出租的公寓: https://www.google.com/maps/search/?api=1&query=Via%20A.%20Carisio%202%2037136%20Verona%20VR%20Italy
+--><!DOCTYPE html>
+
+<html lang="zh-TW">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>🇮🇹 義大利旅遊 DAY 1 — 維洛納 Verona</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&amp;family=Noto+Sans+TC:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --accent:#c4581a;--accent2:#2a6b4a;--gold:#b8902a;
+  --dark:#1a1a18;--paper:#faf8f4;--border:#e0d8cc;
+  --text:#2d2a24;--muted:#7a7060;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Noto Sans TC',sans-serif;background:var(--paper);color:var(--text)}
+
+/* HERO */
+.hero{background:var(--dark);color:#fff;min-height:760px;padding:72px 24px 56px;text-align:center;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.hero-bg{position:absolute;inset:0;background:url('https://upload.wikimedia.org/wikipedia/commons/1/13/View_over_the_Italian_city_of_Verona.jpg') center center/cover no-repeat;transform:scale(1.05);filter:brightness(.5) saturate(.9)}
+.hero-deco{position:absolute;inset:0;background:
+linear-gradient(180deg,rgba(8,12,18,.30) 0%,rgba(19,12,7,.42) 58%,rgba(13,10,8,.60) 100%),
+repeating-linear-gradient(45deg,transparent,transparent 48px,rgba(255,255,255,.02) 48px,rgba(255,255,255,.02) 96px)}
+.hero-content{position:relative;z-index:1;max-width:700px;text-shadow:0 3px 16px rgba(0,0,0,.38)}
+.hero-flag{font-size:58px;margin-bottom:18px}
+.hero-day{display:inline-block;background:var(--accent);color:#fff;font-size:13px;font-weight:700;letter-spacing:3px;padding:8px 24px;border-radius:24px;margin-bottom:22px;text-transform:uppercase;box-shadow:0 10px 22px rgba(0,0,0,.15)}
+.hero h1{font-family:'Noto Serif TC',serif;font-size:clamp(32px,7vw,54px);font-weight:900;line-height:1.15;margin-bottom:14px}
+.hero-sub{font-size:15px;color:rgba(255,255,255,.84);margin:0 auto 24px;line-height:1.9;max-width:620px}
+.hero-pills{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.pill{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.28);backdrop-filter:blur(4px);border-radius:20px;padding:8px 16px;font-size:13px;color:rgba(255,255,255,.95);box-shadow:0 10px 24px rgba(0,0,0,.12)}
+
+/* SECTION */
+.wrap{max-width:820px;margin:0 auto;padding:36px 20px}
+.sec-title{font-family:'Noto Serif TC',serif;font-size:21px;font-weight:700;color:var(--dark);padding-left:14px;margin-bottom:22px}
+
+/* OVERVIEW TABLE */
+.ov-table{width:100%;border-collapse:collapse;font-size:13px}
+.ov-table th{background:var(--dark);color:#fff;padding:10px 14px;text-align:left;font-weight:500}
+.ov-table td{padding:9px 14px;border-bottom:1px solid var(--border);vertical-align:top}
+.ov-table tr:nth-child(even) td{background:rgba(196,88,26,.04)}
+.tag{display:inline-block;border-radius:4px;padding:2px 8px;font-size:11px;font-weight:500;white-space:nowrap}
+.tt{background:#e8f0fe;color:#1a73e8}
+.ts{background:#fce8e0;color:#c4581a}
+.tf{background:#e8f5e9;color:#2a6b4a}
+.th{background:#fdf6e0;color:#b8902a}
+
+/* TIMELINE */
+.tl{position:relative;padding-left:32px}
+.tl::before{content:'';position:absolute;left:11px;top:8px;bottom:8px;width:2px;background:linear-gradient(to bottom,var(--accent),var(--gold),var(--accent2))}
+.tl-item{position:relative;margin-bottom:28px}
+.tl-dot{position:absolute;left:-28px;top:6px;width:16px;height:16px;border-radius:50%;border:2.5px solid #fff}
+.dt{box-shadow:0 0 0 2px #1a73e8;background:#1a73e8}
+.ds{box-shadow:0 0 0 2px var(--accent);background:var(--accent)}
+.df{box-shadow:0 0 0 2px var(--accent2);background:var(--accent2)}
+.dh{box-shadow:0 0 0 2px var(--gold);background:var(--gold)}
+
+.tl-card{background:#fff;border-radius:10px;border:1px solid var(--border);overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.tl-hd{padding:12px 16px 10px;display:flex;align-items:flex-start;gap:10px;border-bottom:1px solid var(--border)}
+.tl-time{font-size:11px;font-weight:700;color:var(--muted);letter-spacing:.5px;white-space:nowrap;padding-top:2px;min-width:88px}
+.tl-meta{flex:1}
+.tl-name{font-family:'Noto Serif TC',serif;font-size:16px;font-weight:700;color:var(--dark);line-height:1.3;margin-bottom:3px}
+.tl-en{font-size:11px;color:var(--muted)}
+.tl-body{padding:12px 16px 6px}
+.tl-body p{font-size:13px;line-height:1.8;color:#444;margin-bottom:6px}
+.tl-body ul{padding-left:16px;margin-bottom:6px}
+.tl-body li{font-size:13px;line-height:1.8;color:#444}
+.tl-tip{background:rgba(196,88,26,.07);border-left:3px solid var(--accent);border-radius:0 6px 6px 0;padding:8px 12px;font-size:12px;color:#7a3a10;margin:8px 0;line-height:1.6}
+.tl-cost{display:inline-flex;align-items:center;gap:4px;background:rgba(184,144,42,.12);color:var(--gold);border-radius:6px;padding:3px 10px;font-size:12px;font-weight:600;margin:4px 0 8px}
+
+/* IMG + LINKS */
+.img-wrap{width:100%;height:180px;overflow:hidden;position:relative;margin-top:8px;background:#eee}
+.img-wrap img{width:100%;height:100%;object-fit:cover;display:block}
+.img-credit{position:absolute;bottom:5px;right:7px;font-size:10px;color:rgba(255,255,255,.8);background:rgba(0,0,0,.45);padding:2px 7px;border-radius:3px;pointer-events:none}
+.spot-links{display:flex}
+.spot-link{flex:1;display:flex;align-items:center;justify-content:center;gap:6px;padding:9px 12px;font-size:12px;font-weight:500;text-decoration:none;border:.5px solid var(--border);transition:background .15s,color .15s}
+.spot-link:first-child{border-radius:0 0 0 10px;border-right:none}
+.spot-link:last-child{border-radius:0 0 10px 0}
+.sl-map{color:var(--accent2);background:rgba(42,107,74,.05)}
+.sl-map:hover{background:var(--accent2);color:#fff}
+.sl-post{color:var(--gold);background:rgba(184,144,42,.05)}
+.sl-post:hover{background:var(--gold);color:#fff}
+
+/* BUDGET */
+.bud-wrap{background:#fff;border-radius:10px;border:1px solid var(--border);overflow:hidden}
+.bud-table{width:100%;border-collapse:collapse;font-size:13px}
+.bud-table th{background:var(--dark);color:#fff;padding:10px 14px;text-align:left;font-weight:500}
+.bud-table td{padding:9px 14px;border-bottom:1px solid var(--border)}
+.bud-table tr:last-child td{border-bottom:none;font-weight:700;background:rgba(196,88,26,.06)}
+.amt{text-align:right;font-weight:600;color:var(--accent)}
+
+/* TIPS */
+.tips-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+.tip-card{background:#fff;border:1px solid var(--border);border-radius:10px;padding:14px;display:flex;gap:10px;align-items:flex-start}
+.tip-icon{font-size:22px;flex-shrink:0}
+.tip-text h4{font-size:13px;font-weight:700;margin-bottom:4px;color:var(--dark)}
+.tip-text p{font-size:12px;color:var(--muted);line-height:1.6}
+
+/* STAY */
+.stay-card{background:#fff;border:1px solid var(--border);border-radius:10px;padding:16px 18px;display:flex;gap:14px;align-items:center}
+.stay-icon{font-size:36px}
+.stay-info h3{font-size:15px;font-weight:700;margin-bottom:4px}
+.stay-info p{font-size:12px;color:var(--muted);line-height:1.7}
+
+/* WHITE SECTION BG */
+.bg-white{background:#fff;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+
+footer{background:var(--dark);color:rgba(255,255,255,.5);text-align:center;padding:24px;font-size:12px}
+footer span{color:var(--accent)}
+
+.hero-note{margin-top:26px;font-size:14px;line-height:1.8;color:rgba(255,255,255,.82)}
+
+.stay-section{padding-top:10px;}
+.stay-section .sec-title{margin-bottom:18px;}
+</style>
+</head>
+<body>
+<!-- HERO -->
+<div class="hero">
+<div class="hero-bg"></div><div class="hero-deco"></div>
+<div class="hero-content">
+<div class="hero-flag">🇮🇹</div>
+<div class="hero-day">DAY 1 · 2026年8月3日（週一）</div>
+<h1>愛上維洛納<br/><span style="font-size:.55em;opacity:.8;font-weight:400">Benvenuti a Verona</span></h1>
+<p class="hero-sub">米蘭馬爾彭薩機場 MXP ｜ Malpensa Express ｜ 米蘭中央車站 ｜ 維洛納新門車站 ｜ 維洛納市區一日遊</p>
+<div class="hero-pills">
+<span class="pill">🛬 MXP 入境</span>
+<span class="pill">🚆 Malpensa Express</span>
+<span class="pill">🏟️ Arena di Verona</span>
+<span class="pill">💌 茱麗葉的家</span>
+<span class="pill">🗼 朗貝爾蒂塔</span>
+<span class="pill">🍛 斯里蘭卡晚餐</span>
+</div><p class="hero-note">2026年8月3日（週一）｜抵達義大利後，展開維洛納經典舊城一日遊</p>
+</div>
+</div>
+<!-- OVERVIEW -->
+<div class="wrap">
+<div class="sec-title">📋 DAY 1 行程總覽</div>
+<table class="ov-table">
+<thead><tr><th>時間</th><th>地點 / 活動</th><th>類型</th><th>備註</th></tr></thead>
+<tbody>
+<tr><td>07:35–09:00</td><td>米蘭馬爾彭薩機場 入境</td><td><span class="tag tt">✈️ 交通</span></td><td>領行李、補水、找Train出口</td></tr>
+<tr><td>09:10–10:05</td><td>Malpensa Express 快線</td><td><span class="tag tt">🚆 交通</span></td><td>€15/人，約51分鐘</td></tr>
+<tr><td>10:05–11:25</td><td>米蘭中央車站 轉車+買午餐</td><td><span class="tag tf">🥖 餐飲</span></td><td>All'Antico Vinaio 三明治</td></tr>
+<tr><td>11:25–13:17</td><td>Trenitalia 2623次區間車</td><td><span class="tag tt">🚆 交通</span></td><td>→ Verona Porta Nuova</td></tr>
+<tr><td>13:30–14:10</td><td>民宿 Check-in + 寄放行李</td><td><span class="tag th">🏠 住宿</span></td><td>步行至 Via Roveggia 公車站</td></tr>
+<tr><td>14:20–14:35</td><td>搭 24/73 號巴士入市區</td><td><span class="tag tt">🚌 交通</span></td><td>San Fermo 站下車</td></tr>
+<tr><td>15:00–15:40</td><td>🔴 茱麗葉的故居</td><td><span class="tag ts">🏛️ 景點</span></td><td>需事先預約</td></tr>
+<tr><td>15:45–16:20</td><td>🔴 朗貝爾蒂塔</td><td><span class="tag ts">🗼 景點</span></td><td>持Verona Card免費</td></tr>
+<tr><td>16:20–16:30</td><td>🔴 百草廣場</td><td><span class="tag ts">🏛️ 景點</span></td><td>散步拍照</td></tr><tr><td>16:30–16:40</td><td>🔴 領主廣場</td><td><span class="tag ts">🏛️ 景點</span></td><td>散步拍照</td></tr>
+<tr><td>16:45–17:20</td><td>🔴 聖亞納大教堂</td><td><span class="tag ts">⛪ 景點</span></td><td>哥德式壁畫</td></tr>
+<tr><td>17:30–18:30</td><td>🔴 圓形競技場</td><td><span class="tag ts">🏟️ 景點</span></td><td>持Verona Card免費</td></tr><tr><td>18:30–19:00</td><td>步行至 Piazza Bra Arena 公車站並返回住宿區</td><td><span class="tag tt">🚌 交通</span></td><td>返回 Verona Porta Nuova 或搭24號直達民宿附近</td></tr>
+<tr><td>19:00–20:00</td><td>Esselunga 超市採購</td><td><span class="tag tf">🛒 採購</span></td><td>買明日早餐</td></tr>
+<tr><td>20:00–21:30</td><td>🍛 晚餐 Sole Ristorante SriLanka</td><td><span class="tag tf">🍴 晚餐</span></td><td>推薦 Egg Roll + Kottu</td></tr>
+<tr><td>21:30–21:40</td><td>返回丹尼斯出租的公寓</td><td><span class="tag th">🏠 住宿</span></td><td>DAY 1 行程結束</td></tr></tbody>
+</table>
+</div>
+<!-- TIMELINE -->
+<div class="bg-white"><div class="wrap">
+<div class="sec-title">🕐 詳細行程時間軸</div>
+<div class="tl">
+<div class="tl-item">
+<div class="tl-dot dt"></div>
+<div class="tl-card">
+<div class="tl-hd">
+<div class="tl-time">07:35–09:00</div>
+<div class="tl-meta">
+<div class="tl-name">米蘭馬爾彭薩機場</div>
+<div class="tl-en">Milan Malpensa Airport (MXP) · Terminal 1</div>
+</div>
+<span class="tag tt">✈️ 入境</span>
+</div>
+<div class="tl-body">
+<p>長途飛行後的第一步！依序完成以下任務：</p>
+<ul>
+<li>📦 <b>行李領取</b>：跟著 <em>Riconsegna Bagagli</em> 標示走</li>
+<li>🚻 <b>公廁</b>：找 <em>Bagno</em> 標示，整頓儀容</li>
+<li>💧 <b>補水</b>：找飲水機（義大利自來水可直飲）</li>
+<li>🚆 <b>找出口</b>：跟著 <em>Train</em> 標示前往 Biglietteria 售票處</li>
+</ul>
+<div class="tl-tip">🔔 行李超過30分鐘未出現，主動到 Lost &amp; Found 詢問。</div>
+</div>
+<div class="img-wrap">
+<img alt="米蘭馬爾彭薩機場" loading="lazy" referrerpolicy="no-referrer" src="https://upload.wikimedia.org/wikipedia/commons/7/76/Malpensa_airport_Milan_01.jpg" style="object-fit: cover; width: 100%; height: 100%;"/>
+<span class="img-credit">圖片來源：Wikimedia Commons</span>
+</div>
+<div class="spot-links">
+<a class="spot-link sl-map" href="https://maps.app.goo.gl/P3zqufozNqK7Vxfj8" rel="noopener" target="_blank">
+<svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="14"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Google Maps
+          </a>
+<a class="spot-link sl-post" href="https://martin-team-0506.github.io/my-website-Italy2026/Image/file_20260803_01.png" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="14"><rect height="18" rx="2" width="18" x="3" y="3"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg> 整張圖檔</a>
+</div>
+</div>
+</div>
+<div class="tl-item">
+<div class="tl-dot dt"></div>
+<div class="tl-card">
+<div class="tl-hd">
+<div class="tl-time">09:10–10:05</div>
+<div class="tl-meta">
+<div class="tl-name">Malpensa Express 機場快線</div>
+<div class="tl-en">Terminal 1 → Milano Centrale</div>
+</div>
+<span class="tag tt">🚆 火車</span>
+</div>
+<div class="tl-body">
+<ul>
+<li>⏱️ 車程約 <b>51 分鐘</b>，班次每 30 分鐘一班</li>
+<li>🎫 在 Biglietteria 或自動售票機購票（可刷卡）</li>
+<li>✅ 上車前務必在月台打票機<b>打票驗印</b></li>
+</ul>
+<div class="tl-tip">🔔 義大利火車票務必在登車前打票，未打票罰款 €50 起！</div>
+<div class="tl-cost">💶 €15 / 人（單程）</div>
+</div>
+<div class="img-wrap">
+<img alt="米蘭中央車站" loading="lazy" referrerpolicy="no-referrer" src="https://upload.wikimedia.org/wikipedia/commons/9/97/14_Milan_Central_Station_%28Milano_Centrale%29%2C_Italy.jpg" style="object-fit: cover; width: 100%; height: 100%;"/>
+<span class="img-credit">圖片來源：Wikimedia Commons</span>
+</div>
+<div class="spot-links">
+<a class="spot-link sl-map" href="https://www.google.com/maps/search/?api=1&amp;query=Milano%20Centrale%20Station%20Milan%20Italy" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="14"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Google Maps</a>
+<a class="spot-link sl-post" href="https://martin-team-0506.github.io/my-website-Italy2026/Image/file_20260803_02.png" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="14"><rect height="18" rx="2" width="18" x="3" y="3"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg> 整張圖檔</a>
+</div>
+</div>
+</div>
+<div class="tl-item">
+<div class="tl-dot df"></div>
+<div class="tl-card">
+<div class="tl-hd">
+<div class="tl-time">10:05–11:25</div>
+<div class="tl-meta">
+<div class="tl-name">米蘭中央車站 轉車 + 午餐採購</div>
+<div class="tl-en">Milano Centrale + All'Antico Vinaio</div>
+</div>
+<span class="tag tf">🥖 美食</span>
+</div>
+<div class="tl-body">
+<ul>
+<li>🥪 <b>All'Antico Vinaio</b>：知名三明治連鎖，選好料料多實在</li>
+<li>🚂 確認 <b>Trenitalia 2623次</b> 月台（看電子看板）</li>
+<li>💱 可在此換少許現金備用</li>
+</ul>
+<div class="tl-tip">🔔 義大利高鐵站人潮多，預留 15 分鐘在月台等候。</div>
+</div>
+<div class="img-wrap">
+<img alt="All’Antico Vinaio三明治店" loading="lazy" referrerpolicy="no-referrer" src="https://commons.wikimedia.org/wiki/Special:FilePath/All%27AnticoVinaio_ottobre2025.jpg?width=1200" style="object-fit: cover; width: 100%; height: 100%;"/>
+<span class="img-credit">圖片來源：Wikimedia Commons</span>
+</div>
+<div class="spot-links">
+<a class="spot-link sl-map" href="https://www.google.com/maps/search/?api=1&amp;query=All%27Antico%20Vinaio%20Milano%20Centrale%20Milan%20Italy" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="14"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Google Maps</a>
+<a class="spot-link sl-post" href="https://martin-team-0506.github.io/my-website-Italy2026/Image/file_20260803_03.png" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="14"><rect height="18" rx="2" width="18" x="3" y="3"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg> 整張圖檔</a>
+</div>
+</div>
+</div>
+<div class="tl-item">
+<div class="tl-dot dt"></div>
+<div class="tl-card">
+<div class="tl-hd">
+<div class="tl-time">11:25–13:17</div>
+<div class="tl-meta">
+<div class="tl-name">Trenitalia 2623 次區間車</div>
+<div class="tl-en">Milano Centrale → Verona Porta Nuova</div>
+</div>
+<span class="tag tt">🚆 火車</span>
+</div>
+<div class="tl-body">
+<ul>
+<li>⏱️ 車程約 <b>1 小時 52 分鐘</b>，車上吃午餐正好</li>
+<li>🏞️ 窗外是波河平原（Po Valley），天晴可遠眺阿爾卑斯山</li>
+<li>💳 抵達後在車站大廳 Forexchange 購買 <b>Verona Card 24h</b></li>
+</ul>
+<div class="tl-tip">🔔 Verona Card 在車站大廳 Forexchange (Maccorp Italiana Spa) 購買，€27/人，多個景點免費入場！</div>
+<div class="tl-cost">💶 Verona Card 24h：€27 / 人</div>
+</div>
+<div class="img-wrap">
+<img alt="維洛納新門車站 (Verona Porta Nuova)" loading="lazy" referrerpolicy="no-referrer" src="https://upload.wikimedia.org/wikipedia/commons/1/15/Veronaportanuova.jpg" style="object-fit: cover; width: 100%; height: 100%;"/>
+<span class="img-credit">圖片來源：Wikimedia Commons</span>
+</div>
+<div class="spot-links">
+<a class="spot-link sl-map" href="https://www.google.com/maps/search/?api=1&amp;query=Verona%20Porta%20Nuova%20railway%20station%20Verona%20Italy" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="14"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Google Maps</a>
+<a class="spot-link sl-post" href="https://martin-team-0506.github.io/my-website-Italy2026/Image/file_20260803_04.png" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="14"><rect height="18" rx="2" width="18" x="3" y="3"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg> 整張圖檔</a>
+</div>
+</div>
+</div>
+<div class="tl-item">
+<div class="tl-dot dh"></div>
+<div class="tl-card">
+<div class="tl-hd">
+<div class="tl-time">13:30–14:10</div>
+<div class="tl-meta">
+<div class="tl-name">民宿辦理入住 + 寄放行李</div>
+<div class="tl-en">Check-in · Airbnb Via A. Carisio 2, Verona</div>
+</div>
+<span class="tag th">🏠 住宿</span>
+</div>
+<div class="tl-body">
+<ul>
+<li>📍 地址：<b>Via A. Carisio, 2, 37136 Verona VR, Italy</b></li>
+<li>🔑 確認 Airbnb App 上的入住說明與門鎖密碼</li>
+<li>🚌 寄完行李後步行至 <b>Via Roveggia V A</b> 公車站，候 24 或 73 號巴士</li><li>🚌 73號巴士在San Fermo站下車，往Teatro Nuovo/Piazzetta Navona走，至茱麗葉的故居之參觀入口</li>
+</ul>
+</div>
+<div class="img-wrap">
+<img alt="維洛納 (Verona)" loading="lazy" referrerpolicy="no-referrer" src="https://upload.wikimedia.org/wikipedia/commons/1/13/View_over_the_Italian_city_of_Verona.jpg" style="object-fit: cover; width: 100%; height: 100%;"/>
+<span class="img-credit">圖片來源：Wikimedia Commons</span>
+</div>
+<div class="spot-links">
+<a class="spot-link sl-map" href="https://www.google.com/maps/search/?api=1&amp;query=Verona%20Italy" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="14"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Google Maps</a>
+<a class="spot-link sl-post" href="https://martin-team-0506.github.io/my-website-Italy2026/Image/file_20260803_05.png" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="14"><rect height="18" rx="2" width="18" x="3" y="3"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg> 整張圖檔</a>
+</div>
+</div>
+</div>
+<div class="tl-item">
+<div class="tl-dot ds"></div>
+<div class="tl-card">
+<div class="tl-hd">
+<div class="tl-time">15:00–15:40</div>
+<div class="tl-meta">
+<div class="tl-name">🔴 茱麗葉的故居</div>
+<div class="tl-en">Casa di Giulietta</div>
+</div>
+<span class="tag ts">🏛️ 景點</span>
+</div>
+<div class="tl-body">
+<p>莎士比亞《羅密歐與茱麗葉》傳說發生地，著名的<b>茱麗葉陽台</b>是全球最浪漫的拍照聖地。</p>
+<ul>
+<li>📸 外牆密密麻麻的情侶留言便條，是義大利浪漫象徵</li>
+<li>🗿 茱麗葉銅像右胸據說摸了能帶來好運（磨損明顯）</li>
+<li>⚠️ <b>須事先預約 15:00 時段</b>，Verona Card 可折抵部分費用</li>
+</ul>
+<div class="tl-tip">🔔 廣場人潮密集，注意隨身物品安全，建議前方背包或防盜腰包。</div>
+</div>
+<div class="img-wrap">
+<img alt="🔴 茱麗葉的故居" loading="lazy" referrerpolicy="no-referrer" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Casa_di_Giulietta_-_Verona.jpg" style="object-fit: cover; width: 100%; height: 100%;"/>
+<span class="img-credit">圖片來源：Wikimedia Commons</span>
+</div>
+<div class="spot-links">
+<a class="spot-link sl-map" href="https://www.google.com/maps/search/?api=1&amp;query=Casa%20di%20Giulietta%20Verona%20Italy" rel="noopener" target="_blank">
+<svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="14"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Google Maps
+          </a>
+<a class="spot-link sl-post" href="https://martin-team-0506.github.io/my-website-Italy2026/Image/file_20260803_06.png" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="14"><rect height="18" rx="2" width="18" x="3" y="3"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg> 整張圖檔</a>
+</div>
+</div>
+</div>
+<div class="tl-item">
+<div class="tl-dot ds"></div>
+<div class="tl-card">
+<div class="tl-hd">
+<div class="tl-time">15:45–16:20</div>
+<div class="tl-meta">
+<div class="tl-name">🔴 朗貝爾蒂塔</div>
+<div class="tl-en">Torre dei Lamberti · 1172年建，高84公尺</div>
+</div>
+<span class="tag ts">🗼 景點</span>
+</div>
+<div class="tl-body">
+<ul>
+<li>✅ <b>持 Verona Card 免費登頂</b>（步行爬樓梯）</li>
+<li>🛗 搭電梯需另加 <b>€1</b></li>
+<li>📷 頂層可360度俯瞰阿迪傑河（Adige）蜿蜒城市的美景</li>
+</ul>
+<div class="tl-tip">🔔 樓梯較陡，穿舒適鞋子。夏天建議傍晚登塔，光線柔和適合拍照。</div>
+</div>
+<div class="img-wrap">
+<img alt="🔴 朗貝爾蒂塔" loading="lazy" referrerpolicy="no-referrer" src="https://upload.wikimedia.org/wikipedia/commons/0/04/Torre_dei_Lamberti_daytime.jpg" style="object-fit: cover; width: 100%; height: 100%;"/>
+<span class="img-credit">圖片來源：Wikimedia Commons</span>
+</div>
+<div class="spot-links">
+<a class="spot-link sl-map" href="https://www.google.com/maps/search/?api=1&amp;query=Torre%20dei%20Lamberti%20Verona%20Italy" rel="noopener" target="_blank">
+<svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="14"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Google Maps
+          </a>
+<a class="spot-link sl-post" href="https://martin-team-0506.github.io/my-website-Italy2026/Image/file_20260803_07.png" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="14"><rect height="18" rx="2" width="18" x="3" y="3"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg> 整張圖檔</a>
+</div>
+</div>
+</div>
+<div class="tl-item">
+<div class="tl-dot ds"></div>
+<div class="tl-card">
+<div class="tl-hd">
+<div class="tl-time">16:20–16:40</div>
+<div class="tl-meta">
+<div class="tl-name">🔴 百草廣場 + 領主廣場</div>
+<div class="tl-en">Piazza delle Erbe + Piazza dei Signori</div>
+</div>
+<span class="tag ts">🏛️ 廣場</span>
+</div>
+<div class="tl-body">
+<ul><li>🌿 <b>百草廣場</b>：羅馬廣場遺址，四周文藝復興建築與壁畫</li></ul>
+<div class="img-wrap"><img alt="🔴 百草廣場" loading="lazy" referrerpolicy="no-referrer" src="https://commons.wikimedia.org/wiki/Special:FilePath/Piazza_delle_Erbe_%28Verona%29.jpg?width=1200" style="object-fit: cover; width: 100%; height: 100%;"/><span class="img-credit">圖片來源：Wikimedia Commons</span></div>
+<div class="spot-links"><a class="spot-link sl-map" href="https://www.google.com/maps/search/?api=1&amp;query=Piazza%20delle%20Erbe%20Verona%20Italy" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="14"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Google Maps</a><a class="spot-link sl-post" href="https://martin-team-0506.github.io/my-website-Italy2026/Image/file_20260803_08.png" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="14"><rect height="18" rx="2" width="18" x="3" y="3"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg> 整張圖檔</a></div>
+<ul><li>⚜️ <b>領主廣場</b>：但丁雕像矗立，哥德式宮殿環繞</li></ul>
+<div class="img-wrap"><img alt="🔴 領主廣場" loading="lazy" referrerpolicy="no-referrer" src="https://commons.wikimedia.org/wiki/Special:FilePath/Piazza_dei_Signori_%28Verona%29.jpg?width=1200" style="object-fit: cover; width: 100%; height: 100%;"/><span class="img-credit">圖片來源：Wikimedia Commons</span></div>
+<div class="spot-links"><a class="spot-link sl-map" href="https://maps.app.goo.gl/qsaXTtTwBCDPSpwz9?g_st=ac" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="14"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Google Maps</a><a class="spot-link sl-post" href="https://martin-team-0506.github.io/my-website-Italy2026/Image/file_20260803_10.png" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="14"><rect height="18" rx="2" width="18" x="3" y="3"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg> 整張圖檔</a></div>
+<ul><li>🍦 廣場周邊必試義式冰淇淋（Gelato）！</li></ul>
+</div>
+</div>
+</div>
+<div class="tl-item">
+<div class="tl-dot ds"></div>
+<div class="tl-card">
+<div class="tl-hd">
+<div class="tl-time">16:45–17:20</div>
+<div class="tl-meta">
+<div class="tl-name">🔴 聖亞納大教堂</div>
+<div class="tl-en">Basilica di Sant'Anastasia · 1290–1481年建</div>
+</div>
+<span class="tag ts">⛪ 教堂</span>
+</div>
+<div class="tl-body">
+<ul>
+<li>🎨 皮薩內羅（Pisanello）壁畫《聖喬治與公主》鎮館之寶</li>
+<li>🗿 入口兩側<b>駝背人石像</b>（Gobbi）是維洛納特色標誌</li>
+<li>✅ 持 Verona Card 免費入場（原價約 €3）</li>
+</ul>
+<div class="tl-tip">🔔 進入教堂需覆蓋肩膀和膝蓋，備一件薄外套或輕薄圍巾。</div>
+</div>
+<div class="img-wrap">
+<img alt="🔴 聖亞納大教堂" loading="lazy" referrerpolicy="no-referrer" src="https://upload.wikimedia.org/wikipedia/commons/4/42/Basilica_di_Santa_Anastasia_%28Verona%29_-_Facciata.jpg" style="object-fit: cover; width: 100%; height: 100%;"/>
+<span class="img-credit">圖片來源：Wikimedia Commons</span>
+</div>
+<div class="spot-links">
+<a class="spot-link sl-map" href="https://www.google.com/maps/search/?api=1&amp;query=Basilica%20di%20Sant%27Anastasia%20Verona%20Italy" rel="noopener" target="_blank">
+<svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="14"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Google Maps
+          </a>
+<a class="spot-link sl-post" href="https://martin-team-0506.github.io/my-website-Italy2026/Image/file_20260803_11.png" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="14"><rect height="18" rx="2" width="18" x="3" y="3"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg> 整張圖檔</a>
+</div>
+</div>
+</div>
+<div class="tl-item">
+<div class="tl-dot ds"></div>
+<div class="tl-card">
+<div class="tl-hd">
+<div class="tl-time">17:30–18:30</div>
+<div class="tl-meta">
+<div class="tl-name">🔴 圓形競技場</div>
+<div class="tl-en">Arena di Verona · 建於西元30年</div>
+</div>
+<span class="tag ts">🏟️ 古蹟</span>
+</div>
+<div class="tl-body">
+<p>古羅馬圓形競技場，保存完整度全球前三（僅次羅馬鬥獸場），今日仍是歌劇演出場地。</p>
+<ul>
+<li>🏛️ 可容納 <b>22,000 名</b>觀眾，外圍白色大理石依然壯觀</li>
+<li>🎭 每年 6–9 月舉辦 <b>Arena Opera Festival</b>（世界頂級歌劇）</li>
+<li>✅ 持 Verona Card 免費入場（原價 €10）</li>
+</ul>
+<div class="tl-tip">🔔 可爬到頂層石階俯瞰整個競技場內部，非常壯觀！若遇歌劇場次可考慮購票觀賞。</div><div class="tl-tip">🚌 18:30–19:00 步行至Piazza Bra Arena公車站，坐車返回維洛納新門火車站或坐24號直達民宿附近</div>
+</div>
+<div class="img-wrap">
+<img alt="🔴 圓形競技場" loading="lazy" referrerpolicy="no-referrer" src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Arena_di_Verona_2.jpg" style="object-fit: cover; width: 100%; height: 100%;"/>
+<span class="img-credit">圖片來源：Wikimedia Commons</span>
+</div>
+<div class="spot-links">
+<a class="spot-link sl-map" href="https://www.google.com/maps/search/?api=1&amp;query=Arena%20di%20Verona%20Verona%20Italy" rel="noopener" target="_blank">
+<svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="14"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Google Maps
+          </a>
+<a class="spot-link sl-post" href="https://martin-team-0506.github.io/my-website-Italy2026/Image/file_20260803_12.png" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="14"><rect height="18" rx="2" width="18" x="3" y="3"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg> 整張圖檔</a>
+</div>
+</div>
+</div>
+<div class="tl-item">
+<div class="tl-dot df"></div>
+<div class="tl-card">
+<div class="tl-hd">
+<div class="tl-time">19:00–20:00</div>
+<div class="tl-meta">
+<div class="tl-name">Esselunga 超市採購</div>
+<div class="tl-en">明日早餐食材採買</div>
+</div>
+<span class="tag tf">🛒 採購</span>
+</div>
+<div class="tl-body">
+<p>義大利最大連鎖超市，採購明日早餐，省錢又有品質：</p>
+<ul>
+<li>💧 礦泉水 Acqua Naturale（不含氣泡）/ Frizzante（含氣泡）</li>
+<li>🥛 全脂牛奶 Latte Intero ｜ 🫙 優格 Yogurt alla Frutta</li>
+<li>🥐 可頌 Cornetto ｜ 🧀 火腿起司 Prosciutto + Formaggio</li>
+<li>🍓 當季水果 Frutta di Stagione</li>
+</ul>
+<div class="tl-tip">🔔 義大利超市蔬果區須自行秤重貼標籤，結帳需自備袋子（付費）或裝背包。</div>
+</div>
+<div class="img-wrap">
+<img alt="Esselunga 超市採購" loading="lazy" referrerpolicy="no-referrer" src="https://commons.wikimedia.org/wiki/Special:FilePath/Milano_-_supermercato_Esselunga_di_via_Losanna.jpg?width=1200" style="object-fit: cover; width: 100%; height: 100%;"/>
+<span class="img-credit">圖片來源：Wikimedia Commons</span>
+</div>
+<div class="spot-links">
+<a class="spot-link sl-map" href="https://maps.app.goo.gl/VPng7mQPDnMWVYjo9" rel="noopener" target="_blank">
+<svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="14"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Google Maps
+          </a>
+<a class="spot-link sl-post" href="https://martin-team-0506.github.io/my-website-Italy2026/Image/file_20260803_13.png" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="14"><rect height="18" rx="2" width="18" x="3" y="3"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg> 整張圖檔</a>
+</div>
+</div>
+</div>
+<div class="tl-item">
+<div class="tl-dot df"></div>
+<div class="tl-card">
+<div class="tl-hd">
+<div class="tl-time">20:00–21:30</div>
+<div class="tl-meta">
+<div class="tl-name">🍛 晚餐：Sole Ristorante SriLanka</div>
+<div class="tl-en">斯里蘭卡料理，異國療癒收尾</div>
+</div>
+<span class="tag tf">🍴 晚餐</span>
+</div>
+<div class="tl-body">
+<p><b>推薦菜單：</b></p>
+<ul>
+<li>🥟 前菜：<b>Egg Roll</b>（蛋捲）+ <b>Fish Roll</b>（魚捲）</li>
+<li>🍜 主餐擇一：<b>Chicken Noodles</b> / <b>Chicken Fried Rice</b></li>
+<li>🥘 或：<b>Chicken Kottu</b> / <b>Mixed Kottu</b>（斯里蘭卡招牌炒餅）</li>
+</ul>
+<div class="tl-tip">🔔 Kottu 是斯里蘭卡國民料理，薄餅切碎與蔬菜蛋肉翻炒，類似炒飯概念，非常美味！</div>
+</div>
+<div class="img-wrap">
+<img alt="🍛 晚餐：Sole Ristorante SriLanka" loading="lazy" referrerpolicy="no-referrer" src="https://commons.wikimedia.org/wiki/Special:FilePath/Lamprais_%28Sri_Lankan_cuisine%29.jpg?width=1200" style="object-fit: cover; width: 100%; height: 100%;"/>
+<span class="img-credit">圖片來源：Wikimedia Commons</span>
+</div>
+<div class="spot-links">
+<a class="spot-link sl-map" href="https://www.google.com/maps/search/?api=1&amp;query=Sole%20Ristorante%20SriLanka%20Verona%20Italy" rel="noopener" target="_blank">
+<svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="14"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Google Maps
+          </a>
+<a class="spot-link sl-post" href="https://martin-team-0506.github.io/my-website-Italy2026/Image/file_20260803_14.png" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="14"><rect height="18" rx="2" width="18" x="3" y="3"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg> 整張圖檔</a>
+</div>
+</div>
+</div><div class="tl-item">
+<div class="tl-dot dh"></div>
+<div class="tl-card">
+<div class="tl-hd">
+<div class="tl-time">21:30–21:40</div>
+<div class="tl-meta">
+<div class="tl-name">返回丹尼斯出租的公寓</div>
+<div class="tl-en">Back to Airbnb Via A. Carisio 2, Verona</div>
+</div>
+<span class="tag th">🏠 住宿</span>
+</div>
+<div class="tl-body">
+<ul>
+<li>🛏️ 結束 DAY 1 行程，返回公寓休息</li>
+<li>📍 住宿地點：<b>Via A. Carisio, 2, 37136 Verona VR, Italy</b></li>
+<li>🌙 建議整理隔日早餐與隨身物品，提早就寢</li>
+</ul>
+</div>
+<div class="img-wrap">
+<img alt="丹尼斯出租的公寓" loading="lazy" referrerpolicy="no-referrer" src="https://commons.wikimedia.org/wiki/Special:FilePath/Verona%2C_facade_of_the_house_36_Via_Giuseppe_Mazzini.jpg?width=1200" style="object-fit: cover; width: 100%; height: 100%;"/>
+<span class="img-credit">圖片來源：Wikimedia Commons</span>
+</div>
+<div class="spot-links">
+<a class="spot-link sl-map" href="https://www.google.com/maps/search/?api=1&amp;query=Via%20A.%20Carisio%202%2037136%20Verona%20VR%20Italy" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="14"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Google Maps</a>
+<a class="spot-link sl-post" href="https://martin-team-0506.github.io/my-website-Italy2026/Image/file_20260803_15.png" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="14"><rect height="18" rx="2" width="18" x="3" y="3"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg> 整張圖檔</a>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+<!-- STAY -->
+<div class="wrap">
+<div class="sec-title">📌 特別說明</div>
+<div class="tl-card" style="margin-bottom:22px;">
+<div class="tl-hd">
+<div class="tl-time">補充 1</div>
+<div class="tl-meta">
+<div class="tl-name">維洛納卡 Verona Card</div>
+<div class="tl-en">City pass for museums, churches and ATV urban buses</div>
+</div>
+<span class="tag ts">🎫 票券</span>
+</div>
+<div class="tl-body">
+<p><b>適合 DAY 1 市區密集參觀使用：</b>維洛納卡是維洛納官方旅遊卡，分為 24 小時與 48 小時版本；從第一次刷卡使用起計時，可用於主要博物館、古蹟、教堂之免費或折扣入場，並可免費搭乘 ATV 維洛納市區公車。</p>
+<ul>
+<li>💶 參考價格：24 小時 €27、48 小時 €32。</li>
+<li>🏟️ 本日行程可用於圓形競技場、茱麗葉的故居、朗貝爾蒂塔、聖亞納大教堂等景點。</li>
+<li>💌 茱麗葉的故居即使持 Verona Card，仍須先線上預約入場時段。</li>
+<li>🚌 搭 ATV 市區公車時，需在車上讀卡機感應驗卡；不含 Aerobus 機場巴士與郊區路線。</li>
+</ul>
+<div class="tl-tip">🔔 建議第一天購買 24h 版本即可；若 DAY 2 仍在維洛納密集參觀，再考慮 48h 版本。</div>
+</div>
+<div class="img-wrap">
+<img alt="佩雅托橋 Ponte Pietra" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Verona%2C_the_Ponte_Pietra.jpg"/>
+<span class="img-credit">圖片來源：Wikimedia Commons｜Ponte Pietra, Verona</span>
+</div>
+<div class="spot-links">
+<a class="spot-link sl-map" href="https://www.visitverona.it/en/verona-card/" rel="noopener" target="_blank">
+<svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="14"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+        官網
+      </a>
+<a class="spot-link sl-post" href="https://martin-team-0506.github.io/my-website-Italy2026/Image/file_20260803_16.png" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="14"><rect height="18" rx="2" width="18" x="3" y="3"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg> 整張圖檔</a>
+</div>
+</div>
+<div class="tl-card" style="margin-bottom:22px;">
+<div class="tl-hd">
+<div class="tl-time">補充 2</div>
+<div class="tl-meta">
+<div class="tl-name">維洛納 ATV 市區公車</div>
+<div class="tl-en">Azienda Trasporti Verona · Urban bus routes</div>
+</div>
+<span class="tag tt">🚌 交通</span>
+</div>
+<div class="tl-body">
+<p><b>本日從民宿進入舊城區的銜接重點：</b>維洛納市區公車由 ATV（Azienda Trasporti Verona）營運，市區路線與時刻表以 ATV 官網公告為準。</p>
+<ul>
+<li>🚌 本行程從 Via Roveggia V A 可候 24 號或 73 號巴士入市區。</li>
+<li>📍 73 號巴士建議在 San Fermo 站下車，往 Teatro Nuovo / Piazzetta Navona 方向走，可抵達茱麗葉的故居參觀入口。</li>
+<li>⏱️ 官網提醒公車時刻會受交通與臨時因素影響，建議提前數分鐘到站等候。</li>
+<li>🎫 持 Verona Card 可搭乘 ATV 市區線，但需上車感應驗卡；若未使用 Verona Card，請另購公車票。</li>
+</ul>
+<div class="tl-tip">🔔 第一天下飛機後體力有限，若等車時間過長，可改搭計程車或叫車，避免壓縮 15:00 茱麗葉的故居預約時段。</div>
+</div>
+<div class="img-wrap">
+<img alt="維洛納 ATV 市區公車" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Bus_Verona.JPG"/>
+<span class="img-credit">圖片來源：Wikimedia Commons｜ATV bus in Verona</span>
+</div>
+<div class="spot-links">
+<a class="spot-link sl-map" href="https://www.atv.verona.it/Linee_e_orari_autobus" rel="noopener" target="_blank">
+<svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="14"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+        官網
+      </a>
+<a class="spot-link sl-post" href="https://martin-team-0506.github.io/my-website-Italy2026/Image/file_20260803_17.png" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="14"><rect height="18" rx="2" width="18" x="3" y="3"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg> 整張圖檔</a>
+</div>
+</div>
+</div><div class="wrap stay-section">
+<div class="sec-title">🏠 今晚住宿</div>
+<div class="stay-card">
+<div class="stay-icon">🏠</div>
+<div class="stay-info">
+<h3>丹尼斯出租的公寓（Airbnb）— 第 1 晚</h3>
+<p>📍 Via A. Carisio, 2, 37136 Verona VR, Italy</p>
+<p>🗓️ 入住 2 晚（DAY 1 + DAY 2）｜🔑 入住前確認 Airbnb App 上的門鎖說明</p>
+</div>
+</div>
+</div>
+<!-- BUDGET -->
+<div style="background:#fff;border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+<div class="wrap">
+<div class="sec-title">💶 DAY 1 每人預算估算</div>
+<div class="bud-wrap">
+<table class="bud-table">
+<thead><tr><th>項目</th><th>說明</th><th class="amt">金額（€/人）</th></tr></thead>
+<tbody>
+<tr><td>✈️ Malpensa Express</td><td>機場快線單程（T1 → Milano Centrale）</td><td class="amt">€15</td></tr>
+<tr><td>🚆 Trenitalia 2623</td><td>米蘭→維洛納區間車（建議提前網購）</td><td class="amt">€12–18</td></tr>
+<tr><td>💳 Verona Card 24h</td><td>景點通行卡（Forexchange 購買）</td><td class="amt">€27</td></tr>
+<tr><td>🥪 午餐</td><td>All'Antico Vinaio 三明治</td><td class="amt">€8–12</td></tr>
+<tr><td>🛗 朗貝爾蒂塔電梯</td><td>步行免費，搭電梯加費</td><td class="amt">€1（選配）</td></tr>
+<tr><td>🚌 市區巴士</td><td>24/73 號巴士來回</td><td class="amt">€3–5</td></tr>
+<tr><td>🛒 超市採購</td><td>明日早餐食材</td><td class="amt">€8–12</td></tr>
+<tr><td>🍛 晚餐</td><td>Sole Ristorante SriLanka</td><td class="amt">€15–20</td></tr>
+<tr><td><b>合計估算</b></td><td>（不含住宿）</td><td class="amt"><b>€89–110</b></td></tr>
+</tbody>
+</table>
+</div>
+<p style="font-size:12px;color:var(--muted);margin-top:10px">※ 住宿費用依 Airbnb 訂單另計。以上為每人估算，實際費用視消費習慣而異。</p>
+</div></div>
+<!-- TIPS -->
+<div class="wrap">
+<div class="sec-title">💡 DAY 1 旅行 Tips</div>
+<div class="tips-grid">
+<div class="tip-card"><div class="tip-icon">🎟️</div><div class="tip-text"><h4>Verona Card 必買</h4><p>24h 卡 €27，免費進入 Arena、Torre、Sant'Anastasia 等景點，非常划算。</p></div></div>
+<div class="tip-card"><div class="tip-icon">🚆</div><div class="tip-text"><h4>火車票務必打票</h4><p>區間車票需在月台黃色打票機打印日期，未打票罰款 €50 起，不可不慎。</p></div></div>
+<div class="tip-card"><div class="tip-icon">💧</div><div class="tip-text"><h4>善用公共飲水機</h4><p>義大利城市廣場多有 Fontanella，水質安全可直飲，自備水壺省錢環保。</p></div></div>
+<div class="tip-card"><div class="tip-icon">🌡️</div><div class="tip-text"><h4>8月高溫防曬</h4><p>維洛納8月均溫28–33°C，備防曬乳、遮陽帽或傘，勤補水。</p></div></div>
+<div class="tip-card"><div class="tip-icon">👜</div><div class="tip-text"><h4>人潮多防扒手</h4><p>茱麗葉廣場與百草廣場人潮密集，貴重物品放前方背包或防盜腰包。</p></div></div>
+<div class="tip-card"><div class="tip-icon">🕍</div><div class="tip-text"><h4>教堂著裝規定</h4><p>進入聖亞納大教堂需覆蓋肩膀和膝蓋，備一件薄外套或圍巾。</p></div></div>
+<div class="tip-card"><div class="tip-icon">💱</div><div class="tip-text"><h4>現金備用</h4><p>義大利部分小商家只收現金，在 Forexchange 換取 €50–100 零錢備用。</p></div></div>
+<div class="tip-card"><div class="tip-icon">🌙</div><div class="tip-text"><h4>提早就寢養精</h4><p>長途飛行後的第一天，建議 21:30 回民宿後盡早休息，DAY 2 才能精力充沛！</p></div></div>
+</div>
+</div>
+<footer>
+<p>🇮🇹 義大利旅遊規劃 · <span>DAY 1 — 維洛納 Verona</span> · 2026.08.03</p>
+<p style="margin-top:6px">製作日期：2026年5月 · 資料僅供參考，實際資訊以現場公告為準</p>
+</footer>
+</body></html>
