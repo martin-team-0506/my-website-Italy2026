@@ -1,0 +1,480 @@
+<!--
+Google Maps links checked/updated: 2026-05-30
+Google Maps manual corrections applied: Venezia Mestre, Duomo Station, Duomo di Milano, Cairoli Station.
+DAY10 image file links: file_20260812_01.png to file_20260812_19.png
+Public reference pages used for notes: YesMilano, ATM Milano, Duomo Milano, Teatro alla Scala Museum, Castello Sforzesco, Best Western Hotel City.
+-->
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>🇮🇹 義大利旅遊 DAY 10 — 威尼斯退房 × 米蘭市區一日遊</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --accent:#8a1a2a;--accent2:#1a5a9a;--gold:#b8902a;--milan:#c4581a;
+  --dark:#15090a;--paper:#fdf6f4;--border:#e2c7be;--text:#1f1111;--muted:#73504a;
+  --green:#2a7a4a;--warn:#c43a1a;--metro1:#d71920;--metro2:#00843d;--blue:#2266aa;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Noto Sans TC',sans-serif;background:var(--paper);color:var(--text)}
+.hero{background:var(--dark);color:#fff;min-height:740px;padding:72px 24px 56px;text-align:center;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.hero-bg{position:absolute;inset:0;background:url('https://commons.wikimedia.org/wiki/Special:Redirect/file/Milano_Italy_Duomo-Milan-01.jpg') center center/cover no-repeat;transform:scale(1.05);filter:brightness(.48) saturate(1.08)}
+.hero-deco{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,7,7,.20) 0%,rgba(54,16,18,.52) 60%,rgba(12,5,5,.86) 100%),repeating-linear-gradient(45deg,transparent,transparent 48px,rgba(255,255,255,.03) 48px,rgba(255,255,255,.03) 96px)}
+.hero-content{position:relative;z-index:1;max-width:860px;text-shadow:0 3px 16px rgba(0,0,0,.45)}
+.hero-flag{font-size:58px;margin-bottom:18px}
+.hero-day{display:inline-block;background:linear-gradient(135deg,var(--accent),var(--milan));color:#fff;font-size:13px;font-weight:700;letter-spacing:3px;padding:8px 24px;border-radius:24px;margin-bottom:22px;text-transform:uppercase;box-shadow:0 10px 22px rgba(0,0,0,.18)}
+.hero h1{font-family:'Noto Serif TC',serif;font-size:clamp(32px,7vw,56px);font-weight:900;line-height:1.15;margin-bottom:14px}
+.hero-sub{font-size:15px;color:rgba(255,255,255,.88);margin:0 auto 24px;line-height:1.9;max-width:760px}
+.hero-pills{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.pill{background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.28);backdrop-filter:blur(4px);border-radius:20px;padding:8px 16px;font-size:13px;color:rgba(255,255,255,.95);box-shadow:0 10px 24px rgba(0,0,0,.12)}
+.hero-note{margin-top:26px;font-size:14px;line-height:1.8;color:rgba(255,255,255,.84)}
+.route-strip{display:flex;gap:0;overflow-x:auto;background:#fff;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.route-stop{flex:1;min-width:128px;padding:14px 10px;text-align:center;border-right:1px solid var(--border);position:relative}
+.route-stop:last-child{border-right:none}
+.route-num{font-size:10px;font-weight:700;color:var(--muted);letter-spacing:1px;margin-bottom:4px}
+.route-name{font-family:'Noto Serif TC',serif;font-size:14px;font-weight:700;color:var(--dark);margin-bottom:2px;line-height:1.35}
+.route-en{font-size:10px;color:var(--muted)}
+.route-arrow{position:absolute;right:-10px;top:50%;transform:translateY(-50%);font-size:16px;color:var(--milan);z-index:1}
+.wrap{max-width:900px;margin:0 auto;padding:36px 20px}
+.sec-title{font-family:'Noto Serif TC',serif;font-size:21px;font-weight:700;color:var(--dark);padding-left:0;margin-bottom:22px}
+.ov-wrap{overflow:visible;border-radius:10px;border:1px solid var(--border);background:#fff}
+.ov-table{width:100%;border-collapse:collapse;font-size:12.5px;table-layout:fixed;min-width:0}
+.ov-table th{background:var(--dark);color:#fff;padding:9px 8px;text-align:left;font-weight:500;word-break:break-word;overflow-wrap:anywhere}
+.ov-table td{padding:8px 8px;border-bottom:1px solid var(--border);vertical-align:top;word-break:break-word;overflow-wrap:anywhere}
+.ov-table tr:last-child td{border-bottom:none}
+.ov-table tr:nth-child(even) td{background:rgba(138,26,42,.035)}
+.tag{display:inline-block;border-radius:4px;padding:2px 8px;font-size:11px;font-weight:600;white-space:nowrap}
+.tt{background:#e8f0fe;color:#1a73e8}.ts{background:#fce8e0;color:#8a1a2a}.tf{background:#fff3e0;color:#c4581a}.th{background:#fdf6e0;color:#967000}.tg{background:#e8f5ee;color:#2a7a4a}.tw{background:#fce8e0;color:#c43a1a}.tm1{background:#ffe8e8;color:#c02a1a}.tm2{background:#e8fce8;color:#0a7a2a}
+.ov-table .tag{white-space:normal;line-height:1.35;padding:2px 5px;font-size:10.5px}
+.metro-box{background:linear-gradient(135deg,#160707,#4a1414);border-radius:12px;padding:18px 20px;color:#fff;margin-bottom:16px;box-shadow:0 2px 10px rgba(0,0,0,.08)}
+.metro-box h3{font-size:15px;font-weight:700;margin-bottom:12px;color:#ffd8d8}
+.mb-row{display:flex;gap:10px;align-items:flex-start;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.12);font-size:13px;color:rgba(255,255,255,.88);line-height:1.7}
+.mb-row:last-child{border-bottom:none}.mb-icon{font-size:16px;flex-shrink:0;margin-top:1px}
+.tl{position:relative;padding-left:32px}
+.tl::before{content:'';position:absolute;left:11px;top:8px;bottom:8px;width:2px;background:linear-gradient(to bottom,var(--accent),var(--milan),var(--metro1),var(--metro2),var(--gold),var(--blue))}
+.tl-item{position:relative;margin-bottom:28px}
+.tl-dot{position:absolute;left:-28px;top:6px;width:16px;height:16px;border-radius:50%;border:2.5px solid #fff}
+.dt{box-shadow:0 0 0 2px #1a73e8;background:#1a73e8}.dm{box-shadow:0 0 0 2px var(--metro1);background:var(--metro1)}.ds{box-shadow:0 0 0 2px var(--accent);background:var(--accent)}.df{box-shadow:0 0 0 2px var(--milan);background:var(--milan)}.dh{box-shadow:0 0 0 2px var(--gold);background:var(--gold)}.dg{box-shadow:0 0 0 2px var(--green);background:var(--green)}.dw{box-shadow:0 0 0 2px var(--warn);background:var(--warn)}
+.tl-card{background:#fff;border-radius:10px;border:1px solid var(--border);overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.tl-hd{padding:12px 16px 10px;display:flex;align-items:flex-start;gap:10px;border-bottom:1px solid var(--border)}
+.tl-time{font-size:11px;font-weight:700;color:var(--muted);letter-spacing:.5px;white-space:nowrap;padding-top:2px;min-width:92px}
+.tl-meta{flex:1}.tl-name{font-family:'Noto Serif TC',serif;font-size:16px;font-weight:700;color:var(--dark);line-height:1.3;margin-bottom:3px}.tl-en{font-size:11px;color:var(--muted)}
+.tl-body{padding:12px 16px 6px}.tl-body p{font-size:13px;line-height:1.8;color:#444;margin-bottom:6px}.tl-body ul{padding-left:16px;margin-bottom:6px}.tl-body li{font-size:13px;line-height:1.8;color:#444}
+.tl-tip{background:rgba(26,90,154,.07);border-radius:6px;padding:8px 12px;font-size:12px;color:#0a4a7a;margin:8px 0;line-height:1.6}
+.tl-warn{background:rgba(196,58,26,.07);border-radius:6px;padding:8px 12px;font-size:12px;color:#7a2a10;margin:8px 0;line-height:1.6}
+.tl-cost{display:inline-flex;align-items:center;gap:4px;background:rgba(184,144,42,.12);color:#8a6900;border-radius:6px;padding:5px 10px;font-size:12px;font-weight:700;margin:4px 0 8px}
+.img-wrap{width:100%;height:220px;overflow:hidden;position:relative;margin-top:8px;background:#f3e5df}
+.img-wrap img{width:100%;height:100%;object-fit:cover;display:block}
+.img-credit{position:absolute;bottom:5px;right:7px;font-size:10px;color:rgba(255,255,255,.9);background:rgba(0,0,0,.50);padding:2px 7px;border-radius:3px;pointer-events:none}
+.fallback-img{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#fff;background:linear-gradient(135deg,#8a1a2a,#c4581a,#1a5a9a);padding:20px}
+.fallback-img .big{font-family:'Noto Serif TC',serif;font-size:26px;font-weight:900;margin-bottom:8px;text-shadow:0 2px 10px rgba(0,0,0,.25)}
+.fallback-img .small{font-size:12px;opacity:.9;line-height:1.7}
+.spot-links{display:flex}
+.spot-link{flex:1;display:flex;align-items:center;justify-content:center;gap:6px;padding:9px 12px;font-size:12px;font-weight:600;text-decoration:none;border:.5px solid var(--border);transition:background .15s,color .15s}
+.spot-link:first-child{border-radius:0 0 0 10px;border-right:none}.spot-link:last-child{border-radius:0 0 10px 0}
+.sl-map{color:var(--green);background:rgba(42,122,74,.05)}.sl-map:hover{background:var(--green);color:#fff}
+.sl-official{color:var(--accent2);background:rgba(26,90,154,.05)}.sl-official:hover{background:var(--accent2);color:#fff}
+.sl-post{color:var(--gold);background:rgba(184,144,42,.05)}.sl-post:hover{background:var(--gold);color:#fff}
+.food-box{background:linear-gradient(135deg,#180808,#4a1a08);border-radius:12px;padding:18px 20px;color:#fff;margin-bottom:12px}
+.food-box h3{font-size:15px;font-weight:700;margin-bottom:12px;color:#ffd0a8}
+.fd-row{display:flex;gap:10px;align-items:flex-start;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.1);font-size:13px;color:rgba(255,255,255,.86);line-height:1.7}
+.fd-row:last-child{border-bottom:none}.fd-icon{font-size:18px;flex-shrink:0}
+.navigli-box{background:linear-gradient(135deg,#081828,#1a4a7a);border-radius:12px;padding:18px 20px;color:#fff;margin-bottom:12px}
+.navigli-box h3{font-size:15px;font-weight:700;margin-bottom:12px;color:#c8e0ff}
+.nb-row{display:flex;gap:10px;align-items:flex-start;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.1);font-size:13px;color:rgba(255,255,255,.84);line-height:1.7}
+.nb-row:last-child{border-bottom:none}.nb-icon{font-size:18px;flex-shrink:0}
+.special-card{border-color:#d9a35a;box-shadow:0 2px 12px rgba(184,144,42,.12)}
+.tips-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+.tip-card{background:#fff;border:1px solid var(--border);border-radius:10px;padding:14px;display:flex;gap:10px;align-items:flex-start}
+.tip-icon{font-size:22px;flex-shrink:0}.tip-text h4{font-size:13px;font-weight:700;margin-bottom:4px;color:var(--dark)}.tip-text p{font-size:12px;color:var(--muted);line-height:1.6}
+.bg-white{background:#fff;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+footer{background:var(--dark);color:rgba(255,255,255,.55);text-align:center;padding:24px;font-size:12px;line-height:1.7}footer span{color:#ffd0d0}
+@media (max-width:640px){.hero{min-height:680px;padding:54px 18px 42px}.wrap{padding:28px 8px}.tl-time{min-width:76px}.img-wrap{height:190px}.spot-link{font-size:11px;padding:9px 8px}.ov-table{font-size:10.5px}.ov-table th,.ov-table td{padding:7px 4px}.ov-table .tag{font-size:9.5px;padding:2px 3px}}
+</style>
+</head>
+<body>
+<div class="hero"><div class="hero-bg"></div><div class="hero-deco"></div>
+  <div class="hero-content"><div class="hero-flag">🏙️</div><div class="hero-day">DAY 10 · 2026年8月12日（週三）</div>
+  <h1>換飯店日，米蘭市區一日遊<br/><span style="font-size:.55em;opacity:.84;font-weight:400">Milano Centrale × Duomo × Navigli</span></h1>
+  <p class="hero-sub">Venezia Mestre 民宿退房｜Trenitalia 9713 抵達 Milano Centrale｜Best Western Hotel City 寄放行李｜Duomo、Galleria、La Scala、Sforzesco、Sempione｜Navigli 晚餐</p>
+  <div class="hero-pills"><span class="pill">🚄 威尼斯 → 米蘭</span><span class="pill">🚇 M1 紅線＋M2 綠線</span><span class="pill">⛪ Duomo 外觀拍照</span><span class="pill">☕ Forno Paradiso＋Starbucks Roastery</span><span class="pill">🏰 Castello Sforzesco</span><span class="pill">🌉 Navigli 晚餐</span></div>
+  <p class="hero-note">早餐 06:30–07:00 民宿自煮｜07:00–07:25 退房整理與拍照留存房況｜夜宿 Best Western Hotel City</p></div>
+</div>
+
+<div class="route-strip"><div class="route-stop"><div class="route-num">出發</div><div class="route-name">🏠 Mestre 民宿</div><div class="route-en">07:00</div><div class="route-arrow">›</div></div><div class="route-stop"><div class="route-num">火車</div><div class="route-name">🚄 Venezia Mestre</div><div class="route-en">08:00</div><div class="route-arrow">›</div></div><div class="route-stop"><div class="route-num">抵達</div><div class="route-name">🚉 Milano Centrale</div><div class="route-en">11:45</div><div class="route-arrow">›</div></div><div class="route-stop"><div class="route-num">住宿</div><div class="route-name">🛏️ Hotel City</div><div class="route-en">12:25</div><div class="route-arrow">›</div></div><div class="route-stop"><div class="route-num">中心</div><div class="route-name">⛪ Duomo</div><div class="route-en">14:20</div><div class="route-arrow">›</div></div><div class="route-stop"><div class="route-num">古堡</div><div class="route-name">🏰 Sforzesco</div><div class="route-en">17:00</div><div class="route-arrow">›</div></div><div class="route-stop"><div class="route-num">晚餐</div><div class="route-name">🌉 Navigli</div><div class="route-en">19:30</div><div class="route-arrow">›</div></div><div class="route-stop"><div class="route-num">返回</div><div class="route-name">🛏️ Lima 飯店</div><div class="route-en">21:40</div></div></div>
+
+<div class="wrap"><div class="sec-title">📋 DAY 10 行程總覽</div><div class="ov-wrap"><table class="ov-table"><colgroup><col style="width:17%"/><col style="width:43%"/><col style="width:17%"/><col style="width:23%"/></colgroup><thead><tr><th>時間</th><th>地點 / 活動</th><th>類型</th><th>備註</th></tr></thead><tbody>
+<tr><td>06:30–07:00</td><td>早餐：民宿自煮，前一晚採買</td><td><span class="tag tf">🍜 早餐</span></td><td>準備移動日</td></tr>
+<tr><td>07:00–07:25</td><td>Thalia Venezia 民宿退房：垃圾分類、廚房整理、拍照留存</td><td><span class="tag tw">🧹 退房</span></td><td>避免退房爭議</td></tr>
+<tr><td>07:30–07:50</td><td>步行前往 Venezia Mestre 火車站</td><td><span class="tag tt">🚶 步行</span></td><td>預留月台時間</td></tr>
+<tr><td>08:00–11:45</td><td>Trenitalia 9713：Venezia Mestre → Milano Centrale</td><td><span class="tag tt">🚄 火車</span></td><td>抵達米蘭</td></tr>
+<tr><td>11:50–12:25</td><td>M2 Centrale → Loreto，轉 M1 → Lima，步行至飯店</td><td><span class="tag tm1">🚇 地鐵</span></td><td>購買 1 日券</td></tr>
+<tr><td>12:25–12:45</td><td>Best Western Hotel City 入住或寄放行李、借用洗手間</td><td><span class="tag th">🛏️ 飯店</span></td><td>Corso Buenos Aires</td></tr>
+<tr><td>13:00–14:00</td><td>午餐：Forno Paradiso 咖啡烘焙店</td><td><span class="tag tf">☕ 午餐</span></td><td>咖啡、佛卡夏、Cornetto</td></tr>
+<tr><td>14:00–16:00</td><td>Duomo、Galleria Vittorio Emanuele II、Teatro alla Scala</td><td><span class="tag ts">⛪ 景點</span></td><td>米蘭核心三連線</td></tr>
+<tr><td>16:00–17:00</td><td>下午茶：Starbucks Reserve Roastery Milano</td><td><span class="tag tf">☕ 下午茶</span></td><td>Piazza Cordusio</td></tr>
+<tr><td>17:00–18:40</td><td>Cairoli、Castello Sforzesco、Parco Sempione</td><td><span class="tag ts">🏰 公園</span></td><td>傍晚散步</td></tr>
+<tr><td>18:40–19:20</td><td>Cadorna FN → Porta Genova FS，前往 Navigli</td><td><span class="tag tm2">🚇 M2</span></td><td>綠線移動</td></tr>
+<tr><td>19:30–21:00</td><td>晚餐：Vetusta Insigna 義式餐廳</td><td><span class="tag tf">🍽️ 晚餐</span></td><td>番紅花燉飯、炸牛排</td></tr>
+<tr><td>21:00–21:40</td><td>Porta Genova FS → Loreto → Lima，步行回飯店</td><td><span class="tag tm2">🚇 回程</span></td><td>夜間注意安全</td></tr>
+</tbody></table></div></div>
+
+<div class="bg-white"><div class="wrap"><div class="sec-title">🎫 米蘭地鐵 1 日券與今日轉乘策略</div><div class="metro-box"><h3>今日重點：先買票、輕裝進城、M1/M2 串接</h3><div class="mb-row"><span class="mb-icon">🎫</span><span><b>1 日券：</b>€7.60，自第一次驗票起 24 小時有效，適合今日多段地鐵移動。</span></div><div class="mb-row"><span class="mb-icon">💳</span><span><b>RicaricaMi：</b>可重複儲值厚紙卡，可裝載單程票、日票或三日票；每次搭乘依規定感應。</span></div><div class="mb-row"><span class="mb-icon">🔴</span><span><b>M1 紅線：</b>Lima、Duomo、Cordusio、Cairoli 是今天核心站點。</span></div><div class="mb-row"><span class="mb-icon">🟢</span><span><b>M2 綠線：</b>Centrale、Loreto、Cadorna、Porta Genova FS 是今天長距離銜接站。</span></div><div class="mb-row"><span class="mb-icon">🧳</span><span><b>行李策略：</b>抵達飯店先寄放行李，再進市中心與 Navigli，移動效率最高。</span></div></div><div class="tl-tip">🔔 2026 年 8 月實際票價、營運調整與施工資訊，出發前仍請以 ATM Milano 官網／app 與車站公告為準。</div></div></div>
+
+<div class="wrap"><div class="sec-title">🕐 詳細行程時間軸</div><div class="tl">
+
+<div class="tl-item">
+  <div class="tl-dot df"></div>
+  <div class="tl-card">
+    <div class="tl-hd"><div class="tl-time">06:30–07:00</div><div class="tl-meta"><div class="tl-name">早餐：民宿自煮</div><div class="tl-en">Thalia Venezia · 前一晚採買</div></div><span class="tag tf">🍜 早餐</span></div>
+    <div class="tl-body">
+<p>早餐以民宿前一晚採買食材簡單處理，今天是威尼斯退房、火車移動與米蘭市區步行日，建議把水、行動電源、車票與護照放在隨身包。</p>
+<ul><li>出門前確認冰箱、瓦斯、電器、垃圾分類與廚房清潔。</li><li>大行李今天會先帶到米蘭飯店寄放，貴重物品不要放托運箱。</li></ul>
+<div class="tl-tip">💡 早晨節奏以「收拾—退房—火車站」為主，早餐不要拖太久。</div></div>
+    
+  </div>
+</div>
+<div class="tl-item">
+  <div class="tl-dot dw"></div>
+  <div class="tl-card">
+    <div class="tl-hd"><div class="tl-time">07:00–07:25</div><div class="tl-meta"><div class="tl-name">Thalia Venezia 民宿退房</div><div class="tl-en">Check-out · 垃圾分類與房況留存</div></div><span class="tag tw">🧹 退房</span></div>
+    <div class="tl-body">
+<ul><li>依民宿規範完成垃圾分類，廚房、水槽、餐桌與浴室簡單整理。</li><li>退房前拍照留存客廳、廚房、浴室、房間與鑰匙放置位置，避免退房爭議。</li><li>確認手機、充電器、轉接頭、護照、車票與小孩個人物品都已帶齊。</li></ul>
+<div class="tl-warn">⚠️ 義大利民宿很重視垃圾分類與廚房狀態，退房照建議直接存在旅遊相簿。</div></div>
+    
+  </div>
+</div>
+<div class="tl-item">
+  <div class="tl-dot dt"></div>
+  <div class="tl-card">
+    <div class="tl-hd"><div class="tl-time">07:30–07:50</div><div class="tl-meta"><div class="tl-name">Venezia Mestre 火車站</div><div class="tl-en">Venezia Mestre railway station · 步行前往車站</div></div><span class="tag tt">🚶 車站</span></div>
+    <div class="tl-body">
+<ul><li>從民宿步行前往 Venezia Mestre 火車站，預留找月台、搭電梯與上洗手間時間。</li><li>大行李移動時盡量走主要道路，進站後先看電子看板確認 Trenitalia 9713 月台。</li><li>若早餐簡單，可在站內補買水、咖啡或點心。</li></ul>
+<div class="tl-tip">🎫 上車前再次確認車次、目的地 Milano Centrale 與車廂位置；大件行李上車後要盡量集中看管。</div></div>
+    
+<div class="img-wrap">
+  <img alt="Venezia Mestre 火車站" loading="lazy" referrerpolicy="no-referrer" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Stazione_di_Venezia_Mestre.JPG" onerror="posterFallback(this,'Venezia Mestre 火車站')"/>
+  <span class="img-credit">圖片來源：Wikimedia Commons｜Venezia Mestre station</span>
+</div>
+<div class="spot-links"><a class="spot-link sl-map" href="https://maps.app.goo.gl/TXHUA7ovspSPtaDX9" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Google Maps</a><a class="spot-link sl-post" href="https://martin-team-0506.github.io/my-website-Italy2026/Image/file_20260809_01.png" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14"><rect height="18" rx="2" width="18" x="3" y="3"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg> 整張圖檔</a></div>
+  </div>
+</div>
+<div class="tl-item">
+  <div class="tl-dot dt"></div>
+  <div class="tl-card">
+    <div class="tl-hd"><div class="tl-time">08:00–11:45</div><div class="tl-meta"><div class="tl-name">米蘭中央車站 Milano Centrale</div><div class="tl-en">Trenitalia 9713 · Venezia Mestre → Milano Centrale</div></div><span class="tag tt">🚄 火車</span></div>
+    <div class="tl-body">
+<ul><li>搭乘 Trenitalia 9713 從 Venezia Mestre 直達 Milano Centrale，行程約 3 小時 45 分。</li><li>抵達後跟著「Metro / M」或「Uscita」指標前往地鐵區，留意月台與電扶梯人潮。</li><li>米蘭中央車站規模很大，行李、手機與錢包務必放在視線內。</li></ul>
+<div class="tl-cost">🎫 米蘭地鐵 1 日券 €7.60｜自第一次驗票起 24 小時有效</div>
+<div class="tl-tip">🔴 米蘭推行 RicaricaMi 可重複儲值厚紙卡，可在自動售票機或授權通路購買並加值；進出地鐵閘門、搭公車與電車時依規定感應。</div></div>
+    
+<div class="img-wrap">
+  <img alt="米蘭中央車站 Milano Centrale" loading="lazy" referrerpolicy="no-referrer" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Milan_Centrale_Stazione_trainshed.jpg" onerror="posterFallback(this,'米蘭中央車站 Milano Centrale')"/>
+  <span class="img-credit">圖片來源：Wikimedia Commons｜Milano Centrale trainshed</span>
+</div>
+<div class="spot-links"><a class="spot-link sl-map" href="https://www.google.com/maps/search/?api=1&query=Milano%20Centrale%20railway%20station" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Google Maps</a><a class="spot-link sl-post" href="https://martin-team-0506.github.io/my-website-Italy2026/Image/file_20260803_02.png" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14"><rect height="18" rx="2" width="18" x="3" y="3"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg> 整張圖檔</a></div>
+  </div>
+</div>
+<div class="tl-item">
+  <div class="tl-dot dm"></div>
+  <div class="tl-card">
+    <div class="tl-hd"><div class="tl-time">11:50–12:25</div><div class="tl-meta"><div class="tl-name">米蘭地鐵 Lima 站</div><div class="tl-en">M2 Centrale → Loreto · M1 Loreto → Lima</div></div><span class="tag tm1">🚇 M2＋M1</span></div>
+    <div class="tl-body">
+<ul><li>從中央車站搭地鐵 M2 綠線到 Loreto，轉乘 M1 紅線到 Lima。</li><li>Lima 站位於 Corso Buenos Aires，出站後步行前往 Best Western Hotel City。</li><li>轉乘時跟著「M1 / Linea Rossa」標示走，Loreto 是較大的轉乘站，請保留 5–10 分鐘緩衝。</li></ul>
+<div class="tl-tip">💡 米蘭地鐵進站前先看方向：M1 往市中心 Duomo 方向時，Lima 只是一站距離。</div></div>
+    
+<div class="img-wrap">
+  <img alt="米蘭地鐵 Lima 站" loading="lazy" referrerpolicy="no-referrer" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Milano_piazza_Lima_accesso_metropolitana.JPG" onerror="posterFallback(this,'米蘭地鐵 Lima 站')"/>
+  <span class="img-credit">圖片來源：Wikimedia Commons｜Lima metro entrance</span>
+</div>
+<div class="spot-links"><a class="spot-link sl-map" href="https://www.google.com/maps/search/?api=1&query=Lima%20Metro%20Station%20Milan" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Google Maps</a><a class="spot-link sl-post" href="https://martin-team-0506.github.io/my-website-Italy2026/Image/file_20260812_01.png" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14"><rect height="18" rx="2" width="18" x="3" y="3"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg> 整張圖檔</a></div>
+  </div>
+</div>
+<div class="tl-item">
+  <div class="tl-dot dh"></div>
+  <div class="tl-card">
+    <div class="tl-hd"><div class="tl-time">12:25–12:45</div><div class="tl-meta"><div class="tl-name">貝斯特韋斯特城市酒店寄放行李</div><div class="tl-en">Best Western Hotel City · Corso Buenos Aires, 42/5</div></div><span class="tag th">🛏️ 飯店</span></div>
+    <div class="tl-body">
+<ul><li>抵達飯店後辦理入住或寄放行李，並借用洗手間整理儀容。</li><li>地址：Corso Buenos Aires, 42/5, 20124 Milano MI。</li><li>飯店位於 Corso Buenos Aires 商圈，附近有 ZARA、H&amp;M、Mango 等平價品牌與生活機能。</li></ul>
+<div class="tl-tip">🛍️ 若房間尚未準備好，先寄放大行李，下午走輕裝進市區最舒服。</div></div>
+    
+<div class="img-wrap">
+  <img alt="貝斯特韋斯特城市酒店寄放行李" loading="lazy" referrerpolicy="no-referrer" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Corso_Buenos_Aires_in_Milan.jpg" onerror="posterFallback(this,'貝斯特韋斯特城市酒店寄放行李')"/>
+  <span class="img-credit">圖片來源：Wikimedia Commons｜Corso Buenos Aires</span>
+</div>
+<div class="spot-links"><a class="spot-link sl-map" href="https://www.google.com/maps/search/?api=1&query=Best%20Western%20Hotel%20City%20Corso%20Buenos%20Aires%2042%2F5%20Milano" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Google Maps</a><a class="spot-link sl-post" href="https://martin-team-0506.github.io/my-website-Italy2026/Image/file_20260812_02.png" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14"><rect height="18" rx="2" width="18" x="3" y="3"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg> 整張圖檔</a></div>
+  </div>
+</div>
+<div class="tl-item">
+  <div class="tl-dot dt"></div>
+  <div class="tl-card">
+    <div class="tl-hd"><div class="tl-time">12:45–12:55</div><div class="tl-meta"><div class="tl-name">步行前往 Porta Venezia 用餐區</div><div class="tl-en">Hotel → Porta Venezia / Via Benedetto Marcello</div></div><span class="tag tt">🚶 步行</span></div>
+    <div class="tl-body">
+<ul><li>從飯店向南朝 Porta Venezia 方向步行約 10 分鐘。</li><li>中午天氣炎熱，建議先買水再前往餐廳。</li><li>這段路商店多、人潮多，手機導航看完就收好。</li></ul></div>
+    
+  </div>
+</div>
+<div class="tl-item">
+  <div class="tl-dot df"></div>
+  <div class="tl-card">
+    <div class="tl-hd"><div class="tl-time">13:00–14:00</div><div class="tl-meta"><div class="tl-name">Forno Paradiso 咖啡烘焙店</div><div class="tl-en">Neapolitan bakery, coffee and more · Via Benedetto Marcello 10</div></div><span class="tag tf">☕ 午餐</span></div>
+    <div class="tl-body">
+<div class="food-box"><h3>推薦點法：南義拿坡里風味輕午餐</h3><div class="fd-row"><span class="fd-icon">☕</span><span><b>拿坡里咖啡：</b>適合搭配甜點或外帶提神。</span></div><div class="fd-row"><span class="fd-icon">🥐</span><span><b>Cornetto 義式可頌：</b>早餐與下午茶常見選擇。</span></div><div class="fd-row"><span class="fd-icon">🥪</span><span><b>佛卡夏／三明治：</b>適合中午不想吃太重的移動日。</span></div></div>
+<div class="tl-tip">💡 若店內座位有限，可分成「內用咖啡」與「外帶麵包點心」兩段處理，避免耽誤 14:00 進市區。</div></div>
+    
+<div class="img-wrap">
+  <img alt="Forno Paradiso 咖啡烘焙店" loading="lazy" referrerpolicy="no-referrer" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Sfogliatelle.JPG" onerror="posterFallback(this,'Forno Paradiso 咖啡烘焙店')"/>
+  <span class="img-credit">圖片來源：Wikimedia Commons｜Neapolitan sfogliatelle</span>
+</div>
+<div class="spot-links"><a class="spot-link sl-map" href="https://www.google.com/maps/search/?api=1&query=Forno%20Paradiso%20Via%20Benedetto%20Marcello%2010%20Milano" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Google Maps</a><a class="spot-link sl-post" href="https://martin-team-0506.github.io/my-website-Italy2026/Image/file_20260812_03.png" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14"><rect height="18" rx="2" width="18" x="3" y="3"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg> 整張圖檔</a></div>
+  </div>
+</div>
+<div class="tl-item">
+  <div class="tl-dot dm"></div>
+  <div class="tl-card">
+    <div class="tl-hd"><div class="tl-time">14:00–14:20</div><div class="tl-meta"><div class="tl-name">米蘭地鐵 Duomo 站</div><div class="tl-en">M1 Red Line · 前往米蘭大教堂</div></div><span class="tag tm1">🚇 M1</span></div>
+    <div class="tl-body">
+<ul><li>從用餐區回到 M1 紅線，搭往 Duomo 站。</li><li>Duomo 站是 M1／M3 交會站，人潮密集，出站後就進入大教堂廣場。</li><li>上、下電扶梯時大行李已寄放飯店，只需注意隨身包。</li></ul>
+<div class="tl-warn">⚠️ Duomo 周邊是觀光熱點，出地鐵口就要提高警覺，手機與錢包不要放外側口袋。</div></div>
+    
+<div class="img-wrap">
+  <img alt="米蘭地鐵 Duomo 站" loading="lazy" referrerpolicy="no-referrer" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Milan,_Metro_station_Duomo.jpg" onerror="posterFallback(this,'米蘭地鐵 Duomo 站')"/>
+  <span class="img-credit">圖片來源：Wikimedia Commons｜Duomo metro station</span>
+</div>
+<div class="spot-links"><a class="spot-link sl-map" href="https://maps.app.goo.gl/sm4mdYWbzcHdbz3LA" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Google Maps</a><a class="spot-link sl-post" href="https://martin-team-0506.github.io/my-website-Italy2026/Image/file_20260812_04.png" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14"><rect height="18" rx="2" width="18" x="3" y="3"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg> 整張圖檔</a></div>
+  </div>
+</div>
+<div class="tl-item">
+  <div class="tl-dot ds"></div>
+  <div class="tl-card">
+    <div class="tl-hd"><div class="tl-time">14:20–15:00</div><div class="tl-meta"><div class="tl-name">米蘭大教堂 Duomo di Milano</div><div class="tl-en">Piazza del Duomo · Gothic Cathedral</div></div><span class="tag ts">⛪ 景點</span></div>
+    <div class="tl-body">
+<ul><li>以外觀與廣場拍照為主，欣賞白色大理石立面、尖塔與廣場視角。</li><li>若未安排入內，建議從正面、側面與 Galleria 入口方向各拍一次。</li><li>近地鐵 M1／M3 Duomo 站，是米蘭最核心的集合點。</li></ul>
+<div class="tl-warn">🔴 別接陌生人遞來的繩結、鴿子飼料、手環等物品；對方可能會索取費用。</div></div>
+    
+<div class="img-wrap">
+  <img alt="米蘭大教堂 Duomo di Milano" loading="lazy" referrerpolicy="no-referrer" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Milano_Italy_Duomo-Milan-01.jpg" onerror="posterFallback(this,'米蘭大教堂 Duomo di Milano')"/>
+  <span class="img-credit">圖片來源：Wikimedia Commons｜Duomo di Milano</span>
+</div>
+<div class="spot-links"><a class="spot-link sl-map" href="https://maps.app.goo.gl/CSVLRpHSXYyRq8Yr9" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Google Maps</a><a class="spot-link sl-post" href="https://martin-team-0506.github.io/my-website-Italy2026/Image/file_20260812_05.png" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14"><rect height="18" rx="2" width="18" x="3" y="3"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg> 整張圖檔</a></div>
+  </div>
+</div>
+<div class="tl-item">
+  <div class="tl-dot ds"></div>
+  <div class="tl-card">
+    <div class="tl-hd"><div class="tl-time">15:00–15:40</div><div class="tl-meta"><div class="tl-name">艾曼紐二世迴廊 Galleria Vittorio Emanuele II</div><div class="tl-en">Glass-roofed arcade · Piazza del Duomo ↔ Piazza della Scala</div></div><span class="tag ts">🏛️ 景點</span></div>
+    <div class="tl-body">
+<ul><li>從米蘭大教堂旁直接走入迴廊，欣賞玻璃穹頂、馬賽克地坪與拱廊立面。</li><li>可快速拍中央八角穹頂、品牌櫥窗與通往斯卡拉廣場的出口。</li><li>迴廊內人潮多，拍照時背包要往前背。</li></ul>
+<div class="tl-tip">📸 最好拍的位置：中央穹頂下方往四個方向各拍一張，畫面最有米蘭感。</div></div>
+    
+<div class="img-wrap">
+  <img alt="艾曼紐二世迴廊 Galleria Vittorio Emanuele II" loading="lazy" referrerpolicy="no-referrer" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Milano,_Galleria_Vittorio_Emanuele_II,_2016-06_CN-01.jpg" onerror="posterFallback(this,'艾曼紐二世迴廊 Galleria Vittorio Emanuele II')"/>
+  <span class="img-credit">圖片來源：Wikimedia Commons｜Galleria Vittorio Emanuele II</span>
+</div>
+<div class="spot-links"><a class="spot-link sl-map" href="https://www.google.com/maps/search/?api=1&query=Galleria%20Vittorio%20Emanuele%20II%20Milan" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Google Maps</a><a class="spot-link sl-post" href="https://martin-team-0506.github.io/my-website-Italy2026/Image/file_20260812_06.png" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14"><rect height="18" rx="2" width="18" x="3" y="3"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg> 整張圖檔</a></div>
+  </div>
+</div>
+<div class="tl-item">
+  <div class="tl-dot ds"></div>
+  <div class="tl-card">
+    <div class="tl-hd"><div class="tl-time">15:40–16:00</div><div class="tl-meta"><div class="tl-name">斯卡拉歌劇院 Teatro alla Scala</div><div class="tl-en">Piazza della Scala · 外觀拍照</div></div><span class="tag ts">🎭 景點</span></div>
+    <div class="tl-body">
+<ul><li>由迴廊走出即可到 Piazza della Scala，外觀拍照約 15–20 分鐘。</li><li>若想入內參觀博物館，需另抓時間並確認當日開放與演出排程。</li><li>廣場中央可回拍歌劇院立面與周邊建築。</li></ul>
+<div class="tl-tip">🎼 這段排外觀快拍即可，將時間留給下午茶與傍晚古堡公園。</div></div>
+    
+<div class="img-wrap">
+  <img alt="斯卡拉歌劇院 Teatro alla Scala" loading="lazy" referrerpolicy="no-referrer" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Milan_-_Scala_-_Facade.jpg" onerror="posterFallback(this,'斯卡拉歌劇院 Teatro alla Scala')"/>
+  <span class="img-credit">圖片來源：Wikimedia Commons｜Teatro alla Scala façade</span>
+</div>
+<div class="spot-links"><a class="spot-link sl-map" href="https://www.google.com/maps/search/?api=1&query=Teatro%20alla%20Scala%20Milan" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Google Maps</a><a class="spot-link sl-post" href="https://martin-team-0506.github.io/my-website-Italy2026/Image/file_20260812_07.png" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14"><rect height="18" rx="2" width="18" x="3" y="3"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg> 整張圖檔</a></div>
+  </div>
+</div>
+<div class="tl-item">
+  <div class="tl-dot df"></div>
+  <div class="tl-card">
+    <div class="tl-hd"><div class="tl-time">16:00–17:00</div><div class="tl-meta"><div class="tl-name">星巴克臻選烘焙工坊 Starbucks Reserve Roastery Milano</div><div class="tl-en">Piazza Cordusio · Coffee experience</div></div><span class="tag tf">☕ 下午茶</span></div>
+    <div class="tl-body">
+<ul><li>米蘭臻選烘焙工坊位於 Piazza Cordusio 一帶，空間與烘豆設備具視覺感。</li><li>可點咖啡、甜點或分享式餐點，順便休息上洗手間。</li><li>17:00 前往 Cordusio 站搭 M1 紅線至 Cairoli 站，銜接古堡與公園。</li></ul>
+<div class="tl-tip">💡 這裡適合當作「冷氣＋補水＋整理照片」休息點，夏季午後很實用。</div></div>
+    
+<div class="img-wrap">
+  <img alt="星巴克臻選烘焙工坊 Starbucks Reserve Roastery Milano" loading="lazy" referrerpolicy="no-referrer" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Starbucks_Reserve_Roastery_17.jpg" onerror="posterFallback(this,'星巴克臻選烘焙工坊 Starbucks Reserve Roastery Milano')"/>
+  <span class="img-credit">圖片來源：Wikimedia Commons｜Starbucks Reserve Roastery Milano</span>
+</div>
+<div class="spot-links"><a class="spot-link sl-map" href="https://www.google.com/maps/search/?api=1&query=Starbucks%20Reserve%20Roastery%20Milano" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Google Maps</a><a class="spot-link sl-post" href="https://martin-team-0506.github.io/my-website-Italy2026/Image/file_20260812_08.png" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14"><rect height="18" rx="2" width="18" x="3" y="3"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg> 整張圖檔</a></div>
+  </div>
+</div>
+<div class="tl-item">
+  <div class="tl-dot dm"></div>
+  <div class="tl-card">
+    <div class="tl-hd"><div class="tl-time">17:00</div><div class="tl-meta"><div class="tl-name">米蘭地鐵 Cairoli 站</div><div class="tl-en">M1 Red Line · Cordusio → Cairoli</div></div><span class="tag tm1">🚇 M1</span></div>
+    <div class="tl-body">
+<ul><li>從 Cordusio 站搭 M1 紅線到 Cairoli 站，出站後前往斯福爾扎古堡。</li><li>Cairoli 站距離 Castello Sforzesco 很近，是傍晚古堡、公園路線的好入口。</li><li>出站先確認方向，朝 Largo Cairoli／Castello 指標前進。</li></ul></div>
+    
+<div class="img-wrap">
+  <img alt="米蘭地鐵 Cairoli 站" loading="lazy" referrerpolicy="no-referrer" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Milano_Cairoli_MM.jpg" onerror="posterFallback(this,'米蘭地鐵 Cairoli 站')"/>
+  <span class="img-credit">圖片來源：Wikimedia Commons｜Cairoli metro station</span>
+</div>
+<div class="spot-links"><a class="spot-link sl-map" href="https://maps.app.goo.gl/6LCiHgjw3sus4UJg7" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Google Maps</a><a class="spot-link sl-post" href="https://martin-team-0506.github.io/my-website-Italy2026/Image/file_20260812_09.png" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14"><rect height="18" rx="2" width="18" x="3" y="3"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg> 整張圖檔</a></div>
+  </div>
+</div>
+<div class="tl-item">
+  <div class="tl-dot ds"></div>
+  <div class="tl-card">
+    <div class="tl-hd"><div class="tl-time">17:00–17:40</div><div class="tl-meta"><div class="tl-name">斯福爾扎古堡 Castello Sforzesco</div><div class="tl-en">Historic fortress · 外觀、庭院與城門</div></div><span class="tag ts">🏰 景點</span></div>
+    <div class="tl-body">
+<ul><li>以古堡外觀、Filarete 塔、庭院與城門通道為主，不安排深入博物館。</li><li>從古堡穿過即可接森皮奧內公園，路線直覺且適合傍晚散步。</li><li>若天氣太熱，可在陰影處短暫休息，補水後再進公園。</li></ul>
+<div class="tl-tip">🏰 城門拱廊下拍照很有縱深，能把紅磚、塔樓與人流收進畫面。</div></div>
+    
+<div class="img-wrap">
+  <img alt="斯福爾扎古堡 Castello Sforzesco" loading="lazy" referrerpolicy="no-referrer" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Milano-castello_sforzesco.jpg" onerror="posterFallback(this,'斯福爾扎古堡 Castello Sforzesco')"/>
+  <span class="img-credit">圖片來源：Wikimedia Commons｜Castello Sforzesco</span>
+</div>
+<div class="spot-links"><a class="spot-link sl-map" href="https://www.google.com/maps/search/?api=1&query=Castello%20Sforzesco%20Milan" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Google Maps</a><a class="spot-link sl-post" href="https://martin-team-0506.github.io/my-website-Italy2026/Image/file_20260812_10.png" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14"><rect height="18" rx="2" width="18" x="3" y="3"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg> 整張圖檔</a></div>
+  </div>
+</div>
+<div class="tl-item">
+  <div class="tl-dot dg"></div>
+  <div class="tl-card">
+    <div class="tl-hd"><div class="tl-time">17:40–18:40</div><div class="tl-meta"><div class="tl-name">森皮奧內公園 Parco Sempione</div><div class="tl-en">Castello Sforzesco 後方大型城市公園</div></div><span class="tag tg">🌿 景點</span></div>
+    <div class="tl-body">
+<ul><li>從古堡後方進入公園，沿湖邊與草地慢走，夏季傍晚光線柔和。</li><li>若體力許可，可遠望和平門 Arco della Pace 後再折返 Cadorna 方向。</li><li>這段是今天最適合放慢速度的區間，補水、防蚊與注意日落後返程。</li></ul>
+<div class="tl-tip">🌿 公園傍晚人多但氣氛舒服，建議不要走太偏僻小徑，保持在主動線。</div></div>
+    
+<div class="img-wrap">
+  <img alt="森皮奧內公園 Parco Sempione" loading="lazy" referrerpolicy="no-referrer" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Parco_Sempione_-_Milano.jpg" onerror="posterFallback(this,'森皮奧內公園 Parco Sempione')"/>
+  <span class="img-credit">圖片來源：Wikimedia Commons｜Parco Sempione</span>
+</div>
+<div class="spot-links"><a class="spot-link sl-map" href="https://www.google.com/maps/search/?api=1&query=Parco%20Sempione%20Milan" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Google Maps</a><a class="spot-link sl-post" href="https://martin-team-0506.github.io/my-website-Italy2026/Image/file_20260812_11.png" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14"><rect height="18" rx="2" width="18" x="3" y="3"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg> 整張圖檔</a></div>
+  </div>
+</div>
+<div class="tl-item">
+  <div class="tl-dot dm"></div>
+  <div class="tl-card">
+    <div class="tl-hd"><div class="tl-time">18:40–19:20</div><div class="tl-meta"><div class="tl-name">米蘭地鐵 Porta Genova FS 站</div><div class="tl-en">Cadorna FN → Porta Genova FS · M2 Green Line</div></div><span class="tag tm2">🚇 M2</span></div>
+    <div class="tl-body">
+<ul><li>18:40–19:00 從公園步行到 Cadorna FN 地鐵站。</li><li>19:00–19:20 搭地鐵 M2 綠線從 Cadorna 到 Porta Genova FS。</li><li>出站後即可步行前往 Navigli 運河區與晚餐餐廳。</li></ul>
+<div class="tl-tip">🚇 M2 綠線往 Navigli 時，請看往 Assago / Abbiategrasso 方向的月台標示。</div></div>
+    
+<div class="img-wrap">
+  <img alt="米蘭地鐵 Porta Genova FS 站" loading="lazy" referrerpolicy="no-referrer" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Milano_Porta_Genova_Station_MM.jpg" onerror="posterFallback(this,'米蘭地鐵 Porta Genova FS 站')"/>
+  <span class="img-credit">圖片來源：Wikimedia Commons｜Porta Genova metro station</span>
+</div>
+<div class="spot-links"><a class="spot-link sl-map" href="https://www.google.com/maps/search/?api=1&query=Porta%20Genova%20FS%20Metro%20Station%20Milan" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Google Maps</a><a class="spot-link sl-post" href="https://martin-team-0506.github.io/my-website-Italy2026/Image/file_20260812_12.png" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14"><rect height="18" rx="2" width="18" x="3" y="3"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg> 整張圖檔</a></div>
+  </div>
+</div>
+<div class="tl-item">
+  <div class="tl-dot ds"></div>
+  <div class="tl-card">
+    <div class="tl-hd"><div class="tl-time">19:20–19:30</div><div class="tl-meta"><div class="tl-name">Navigli 運河區</div><div class="tl-en">Canal district · Aperitivo and evening walk</div></div><span class="tag ts">🌉 街區</span></div>
+    <div class="tl-body">
+<div class="navigli-box"><h3>傍晚 Navigli 建議玩法</h3><div class="nb-row"><span class="nb-icon">🌉</span><span>先到 Naviglio Grande 河岸拍夕陽與運河倒影。</span></div><div class="nb-row"><span class="nb-icon">🍹</span><span>晚餐前可感受米蘭 Aperitivo 氣氛，但今晚已有餐廳安排，不建議喝太多。</span></div><div class="nb-row"><span class="nb-icon">📸</span><span>橋上與水岸餐廳外側是最好拍的位置。</span></div></div>
+<div class="tl-tip">💡 Navigli 晚上氣氛熱鬧，餐廳與酒吧密集，行走時注意自行車、機車與人潮。</div></div>
+    
+<div class="img-wrap">
+  <img alt="Navigli 運河區" loading="lazy" referrerpolicy="no-referrer" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Naviglio_Grande,_Milan,_Italy.jpg" onerror="posterFallback(this,'Navigli 運河區')"/>
+  <span class="img-credit">圖片來源：Wikimedia Commons｜Naviglio Grande, Milan</span>
+</div>
+<div class="spot-links"><a class="spot-link sl-map" href="https://www.google.com/maps/search/?api=1&query=Navigli%20Milan" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Google Maps</a><a class="spot-link sl-post" href="https://martin-team-0506.github.io/my-website-Italy2026/Image/file_20260812_13.png" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14"><rect height="18" rx="2" width="18" x="3" y="3"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg> 整張圖檔</a></div>
+  </div>
+</div>
+<div class="tl-item">
+  <div class="tl-dot df"></div>
+  <div class="tl-card">
+    <div class="tl-hd"><div class="tl-time">19:30–21:00</div><div class="tl-meta"><div class="tl-name">Vetusta Insigna 義式餐廳</div><div class="tl-en">Alzaia Naviglio Grande · Milanese dinner</div></div><span class="tag tf">🍽️ 晚餐</span></div>
+    <div class="tl-body">
+<div class="food-box"><h3>推薦餐點：米蘭經典晚餐</h3><div class="fd-row"><span class="fd-icon">🍚</span><span><b>米蘭番紅花燉飯：</b>Risotto alla milanese，色澤金黃、香氣明顯。</span></div><div class="fd-row"><span class="fd-icon">🍚</span><span><b>招牌燉飯：</b>Risotto alla vetusta，可作為店家特色款比較。</span></div><div class="fd-row"><span class="fd-icon">🥩</span><span><b>米蘭式炸牛排：</b>Cotoletta alla milanese，適合多人分食。</span></div></div>
+<div class="tl-tip">🍽️ Navigli 晚餐尖峰人多，建議提前訂位；點餐時先確認份量、服務費與飲水是否另計。</div></div>
+    
+<div class="img-wrap">
+  <img alt="Vetusta Insigna 義式餐廳" loading="lazy" referrerpolicy="no-referrer" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Milanese_con_pomodorini.jpg" onerror="posterFallback(this,'Vetusta Insigna 義式餐廳')"/>
+  <span class="img-credit">圖片來源：Wikimedia Commons｜Cotoletta alla milanese</span>
+</div>
+<div class="spot-links"><a class="spot-link sl-map" href="https://www.google.com/maps/search/?api=1&query=Vetusta%20Insigna%20Alzaia%20Naviglio%20Grande%2048%20Milan" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Google Maps</a><a class="spot-link sl-post" href="https://martin-team-0506.github.io/my-website-Italy2026/Image/file_20260812_14.png" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14"><rect height="18" rx="2" width="18" x="3" y="3"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg> 整張圖檔</a></div>
+  </div>
+</div>
+<div class="tl-item">
+  <div class="tl-dot dm"></div>
+  <div class="tl-card">
+    <div class="tl-hd"><div class="tl-time">21:00–21:40</div><div class="tl-meta"><div class="tl-name">米蘭地鐵 Loreto 站轉乘返飯店</div><div class="tl-en">Porta Genova FS → Loreto → Lima · M2 + M1</div></div><span class="tag tm2">🚇 回程</span></div>
+    <div class="tl-body">
+<ul><li>從 Porta Genova FS 搭 M2 綠線，往 Cologno Nord / Gessate 方向，到 Loreto 站。</li><li>在 Loreto 站轉乘 M1 紅線，往 Rho Fieramilano / Bisceglie 方向，搭 1 站到 Lima 站。</li><li>由 Lima 站步行回 Best Western Hotel City，結束換飯店日與米蘭市區一日遊。</li></ul>
+<div class="tl-warn">⚠️ 夜間回飯店請走主要道路，不要邊走邊看手機；轉乘站內若人潮混雜，背包放前面。</div></div>
+    
+<div class="img-wrap">
+  <img alt="米蘭地鐵 Loreto 站轉乘返飯店" loading="lazy" referrerpolicy="no-referrer" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Milano_-_metropolitana_-_stazione_Loreto_-_banchine_linea_2.jpg" onerror="posterFallback(this,'米蘭地鐵 Loreto 站轉乘返飯店')"/>
+  <span class="img-credit">圖片來源：Wikimedia Commons｜Loreto metro station</span>
+</div>
+<div class="spot-links"><a class="spot-link sl-map" href="https://www.google.com/maps/search/?api=1&query=Loreto%20Metro%20Station%20Milan" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Google Maps</a><a class="spot-link sl-post" href="https://martin-team-0506.github.io/my-website-Italy2026/Image/file_20260812_15.png" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14"><rect height="18" rx="2" width="18" x="3" y="3"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg> 整張圖檔</a></div>
+  </div>
+</div>
+<div class="tl-item">
+  <div class="tl-dot dh"></div>
+  <div class="tl-card">
+    <div class="tl-hd"><div class="tl-time">21:40 後</div><div class="tl-meta"><div class="tl-name">貝斯特韋斯特城市酒店 Best Western Hotel City</div><div class="tl-en">Corso Buenos Aires, 42/5 · 住宿</div></div><span class="tag th">🛏️ 住宿</span></div>
+    <div class="tl-body">
+<ul><li>回飯店後辦理正式入住、洗澡、充電與整理隔日行李。</li><li>飯店位於米蘭大型平價購物街，可視體力短逛 ZARA、H&amp;M 或補買日用品。</li><li>明天若安排米蘭近郊或購物，可先確認地鐵票有效時間與隔日交通。</li></ul>
+<div class="tl-tip">🛏️ 今日移動多、步行多，建議晚上先休息；購物街可留到隔天精神較好再逛。</div></div>
+    
+  </div>
+</div>
+</div></div>
+
+<div class="bg-white"><div class="wrap"><div class="sec-title">⭐ 特別說明</div><div class="tl">
+
+<div class="tl-item special-item">
+  <div class="tl-dot ds"></div>
+  <div class="tl-card special-card">
+    <div class="tl-hd"><div class="tl-time">特別說明</div><div class="tl-meta"><div class="tl-name">米蘭 Milan</div><div class="tl-en">Italy’s design, fashion and culture capital</div></div><span class="tag th">🏙️ 城市</span></div>
+    <div class="tl-body">
+<p>米蘭是義大利北部倫巴底大區核心城市，也是設計、時尚、金融與文化活動的重要中心。對旅人來說，市中心可用「Duomo 大教堂—Galleria 迴廊—La Scala—Sforzesco 古堡—Sempione 公園」串成高效率步行軸線。</p>
+<ul><li>市中心觀光熱點扒手較多，尤其 Duomo、地鐵站、迴廊與人潮擁擠街口。</li><li>夏季白天熱、午後人多，建議把室內休息點安排在咖啡館、百貨或飯店寄放行李後再出發。</li><li>Navigli 適合傍晚到夜間造訪，餐廳與酒吧集中，建議提前訂位。</li></ul></div>
+    
+<div class="img-wrap">
+  <img alt="米蘭 Milan" loading="lazy" referrerpolicy="no-referrer" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Milano_Italy_Duomo-Milan-01.jpg" onerror="posterFallback(this,'米蘭 Milan')"/>
+  <span class="img-credit">圖片來源：Wikimedia Commons｜Milan Duomo city landmark</span>
+</div>
+<div class="spot-links"><a class="spot-link sl-official" href="https://www.yesmilano.it/en" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg> 官網</a><a class="spot-link sl-post" href="https://martin-team-0506.github.io/my-website-Italy2026/Image/file_20260812_16.png" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14"><rect height="18" rx="2" width="18" x="3" y="3"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg> 整張圖檔</a></div>
+  </div>
+</div>
+<div class="tl-item special-item">
+  <div class="tl-dot ds"></div>
+  <div class="tl-card special-card">
+    <div class="tl-hd"><div class="tl-time">特別說明</div><div class="tl-meta"><div class="tl-name">米蘭地鐵 Milan Metro</div><div class="tl-en">ATM · M1 Red / M2 Green / M3 Yellow / M4 Blue / M5 Lilac</div></div><span class="tag th">🚇 交通</span></div>
+    <div class="tl-body">
+<p>米蘭地鐵由 ATM 營運，是市區移動最實用的工具。DAY10 主要使用 M1 紅線與 M2 綠線：中央車站到 Loreto、Lima；Duomo、Cordusio、Cairoli；Cadorna 到 Porta Genova FS；晚間再經 Loreto 回 Lima。</p>
+<ul><li><b>票券：</b>市區單日票 €7.60，自第一次驗票起 24 小時內可不限次數搭乘適用交通。</li><li><b>RicaricaMi：</b>可在自動售票機或授權通路購買與加值，進出地鐵與搭乘地面交通時需感應。</li><li><b>搭乘提醒：</b>進站先看方向與終點站，Loreto、Duomo、Cadorna 等轉乘站人潮多，轉線時保留緩衝。</li></ul></div>
+    
+<div class="img-wrap">
+  <img alt="米蘭地鐵 Milan Metro" loading="lazy" referrerpolicy="no-referrer" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Milano_-_mappa_rete_metropolitana_(schematica).svg" onerror="posterFallback(this,'米蘭地鐵 Milan Metro')"/>
+  <span class="img-credit">圖片來源：Wikimedia Commons｜Milan Metro schematic map</span>
+</div>
+<div class="spot-links"><a class="spot-link sl-official" href="https://www.atm.it/en/AltriServizi/Trasporto/Pages/Maps.aspx" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg> 官網</a><a class="spot-link sl-post" href="https://martin-team-0506.github.io/my-website-Italy2026/Image/file_20260812_17.png" rel="noopener" target="_blank"><svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14"><rect height="18" rx="2" width="18" x="3" y="3"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg> 整張圖檔</a></div>
+  </div>
+</div>
+</div></div></div>
+
+<div class="wrap"><div class="sec-title">✅ 今日實用提醒</div><div class="tips-grid">
+  <div class="tip-card"><div class="tip-icon">🧳</div><div class="tip-text"><h4>換飯店日先減重</h4><p>抵達米蘭後先寄放行李，再前往 Duomo 與 Navigli，避免拖行李搭地鐵與逛景點。</p></div></div>
+  <div class="tip-card"><div class="tip-icon">🚇</div><div class="tip-text"><h4>看終點方向</h4><p>米蘭地鐵轉乘時不要只看顏色，也要看終點方向，Loreto 與 Duomo 人潮特別多。</p></div></div>
+  <div class="tip-card"><div class="tip-icon">🕵️</div><div class="tip-text"><h4>Duomo 防詐</h4><p>陌生人遞手環、繩結、鴿子飼料時直接拒絕，不停下交談，不讓對方靠近小孩或包包。</p></div></div>
+  <div class="tip-card"><div class="tip-icon">☀️</div><div class="tip-text"><h4>夏季午後補水</h4><p>14:00–17:00 是最熱時段，安排咖啡館休息與洗手間非常必要。</p></div></div>
+  <div class="tip-card"><div class="tip-icon">🌉</div><div class="tip-text"><h4>Navigli 先訂位</h4><p>傍晚運河區很熱門，晚餐建議事先訂位，並留意服務費、飲水與座位安排。</p></div></div>
+  <div class="tip-card"><div class="tip-icon">🛍️</div><div class="tip-text"><h4>Corso Buenos Aires</h4><p>飯店所在街區生活機能好，可補買日用品或逛平價品牌，但深夜不要逛太遠。</p></div></div>
+</div></div>
+
+<footer><p>🇮🇹 義大利旅遊規劃 · <span>DAY 10 — Venezia Mestre → Milano Centrale → Duomo → Navigli</span> · 2026.08.12</p><p>版型依 20260810 行程頁架構整理｜首次出現地點已加入圖片、Google Maps 與整張圖檔連結；特別說明已加入官網與整張圖檔連結。</p></footer>
+<script>
+function posterFallback(img,title){
+  img.style.display='none';
+  var wrap=img.closest('.img-wrap');
+  if(!wrap || wrap.querySelector('.fallback-img')) return;
+  var div=document.createElement('div');
+  div.className='fallback-img';
+  div.innerHTML='<div class="big">'+title+'</div><div class="small">圖片載入受限時顯示此備用視覺區塊<br>下方仍保留 Google Maps／官網與整張圖檔連結</div>';
+  wrap.insertBefore(div, wrap.firstChild);
+}
+</script>
+</body></html>
