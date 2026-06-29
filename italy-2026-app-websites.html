@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>2026 義大利 12 天自由行｜必備 App 與網站工具清單</title>
+  <meta name="description" content="依照 2026 義大利 12 天自由行路線整理的 App、官方網站、交通票券、每日使用建議與出發前檢查表。" />
+  <style>
+    :root {
+      --bg: #fbf4e8;
+      --paper: #fffaf1;
+      --paper-2: #ffffff;
+      --ink: #21313f;
+      --muted: #65717d;
+      --line: #e7dbc8;
+      --green: #1f8a5b;
+      --red: #c84c3d;
+      --gold: #d49b3d;
+      --blue: #295978;
+      --shadow: 0 16px 40px rgba(67, 51, 29, .10);
+      --radius: 22px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", Arial, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 15% 0%, rgba(31, 138, 91, .13), transparent 34%),
+        radial-gradient(circle at 88% 8%, rgba(200, 76, 61, .13), transparent 30%),
+        linear-gradient(180deg, #fff8ed 0%, var(--bg) 45%, #fffaf2 100%);
+      line-height: 1.7;
+    }
+    a { color: inherit; }
+    .container { width: min(1160px, calc(100% - 32px)); margin: 0 auto; }
+    header.hero {
+      padding: 46px 0 30px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-card {
+      background: rgba(255, 250, 241, .86);
+      border: 1px solid rgba(231, 219, 200, .95);
+      border-radius: 32px;
+      padding: clamp(24px, 5vw, 54px);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+      position: relative;
+    }
+    .flag-strip {
+      display: flex; gap: 8px; margin-bottom: 18px; align-items: center;
+      color: var(--muted); font-weight: 700; letter-spacing: .06em; font-size: .88rem;
+    }
+    .dot { width: 12px; height: 12px; border-radius: 99px; display: inline-block; }
+    .dot.green { background: var(--green); }
+    .dot.white { background: #f9f9f9; border: 1px solid #ddd; }
+    .dot.red { background: var(--red); }
+    h1 { font-size: clamp(2rem, 5vw, 4.1rem); line-height: 1.12; margin: 0 0 16px; letter-spacing: -.045em; }
+    .subtitle { font-size: clamp(1rem, 2vw, 1.35rem); color: var(--blue); font-weight: 800; margin: 0 0 14px; }
+    .lead { max-width: 900px; color: #4d5965; font-size: 1.05rem; margin: 0; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
+    button, .btn {
+      border: 0; cursor: pointer; text-decoration: none;
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      border-radius: 999px; padding: 12px 18px; font-weight: 900;
+      background: var(--ink); color: #fff; box-shadow: 0 10px 22px rgba(33,49,63,.16);
+      transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+    }
+    button:hover, .btn:hover { transform: translateY(-1px); box-shadow: 0 14px 26px rgba(33,49,63,.18); }
+    .btn.secondary { background: #fff; color: var(--ink); border: 1px solid var(--line); box-shadow: none; }
+    .btn.green { background: var(--green); }
+    .highlights { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 28px; }
+    .highlight { background: #fff; border: 1px solid var(--line); border-radius: 20px; padding: 18px; }
+    .highlight b { display: block; font-size: 1.03rem; margin-bottom: 5px; }
+    .highlight span { color: var(--muted); font-size: .94rem; }
+    nav.quick {
+      position: sticky; top: 0; z-index: 20;
+      background: rgba(251, 244, 232, .92); backdrop-filter: blur(12px);
+      border-top: 1px solid rgba(231,219,200,.7); border-bottom: 1px solid rgba(231,219,200,.9);
+    }
+    .quick-inner { display: flex; gap: 10px; overflow-x: auto; padding: 12px 0; scrollbar-width: thin; }
+    .quick a { white-space: nowrap; border: 1px solid var(--line); background: #fffaf1; border-radius: 999px; padding: 8px 12px; text-decoration: none; font-weight: 800; color: #344250; font-size: .9rem; }
+    main { padding: 28px 0 70px; }
+    section { margin: 34px 0; scroll-margin-top: 78px; }
+    .section-head { display: flex; justify-content: space-between; align-items: end; gap: 20px; margin-bottom: 14px; }
+    h2 { font-size: clamp(1.45rem, 2.5vw, 2.2rem); margin: 0; letter-spacing: -.03em; }
+    .note { color: var(--muted); margin: 6px 0 0; }
+    .card {
+      background: rgba(255,250,241,.86);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+    .table-wrap { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; min-width: 850px; background: #fff; }
+    th { background: #f2e5d3; color: #263646; font-size: .92rem; text-align: left; padding: 13px 14px; border-bottom: 1px solid var(--line); position: sticky; top: 0; }
+    td { vertical-align: top; padding: 14px; border-bottom: 1px solid #efe4d4; }
+    tr:last-child td { border-bottom: 0; }
+    td:first-child { font-weight: 900; color: #1d2e3b; min-width: 190px; }
+    .tag { display: inline-flex; border-radius: 999px; background: #edf7f1; color: #146c46; padding: 4px 9px; font-size: .83rem; font-weight: 900; }
+    .site-link { display: inline-flex; border-radius: 999px; padding: 7px 11px; background: #f7fafc; border: 1px solid #dce6ed; color: #24516d; text-decoration: none; font-weight: 900; white-space: nowrap; font-size: .88rem; }
+    .timeline { display: grid; gap: 14px; }
+    .day-card { display: grid; grid-template-columns: 155px 1fr; gap: 18px; background: #fff; border: 1px solid var(--line); border-radius: 22px; padding: 18px; box-shadow: 0 8px 24px rgba(67,51,29,.06); }
+    .day-label { border-radius: 18px; padding: 12px; color: #fff; background: linear-gradient(135deg, var(--green), var(--blue)); font-weight: 1000; text-align: center; align-self: start; }
+    .day-card h3 { margin: 0 0 6px; font-size: 1.1rem; }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+    .chip { background: #fff7e7; border: 1px solid #ecd8ae; border-radius: 999px; padding: 5px 9px; font-weight: 800; color: #5e4b20; font-size: .88rem; }
+    .folder-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; }
+    .folder { background: #fff; border: 1px solid var(--line); border-radius: 22px; padding: 18px; box-shadow: 0 8px 24px rgba(67,51,29,.06); }
+    .folder .icon { width: 42px; height: 32px; background: linear-gradient(135deg, #f1ca73, #e5a642); border-radius: 10px 10px 8px 8px; margin-bottom: 12px; position: relative; }
+    .folder .icon:before { content: ""; position: absolute; width: 20px; height: 8px; background: #f4d58c; border-radius: 7px 7px 0 0; top: -6px; left: 6px; }
+    .folder h3 { margin: 0 0 8px; font-size: 1.05rem; }
+    .folder p { margin: 0; color: var(--muted); font-size: .94rem; }
+    .checklist { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; padding: 18px; background: #fff; }
+    .check-item { display: flex; gap: 12px; align-items: start; border: 1px solid #eee0cd; border-radius: 18px; padding: 14px; background: #fffdf8; }
+    .check-item input { width: 20px; height: 20px; margin-top: 3px; accent-color: var(--green); flex: 0 0 auto; }
+    .check-item label { font-weight: 800; cursor: pointer; }
+    .check-item small { display: block; color: var(--muted); margin-top: 3px; font-weight: 500; }
+    .download-panel { padding: 24px; display: grid; grid-template-columns: 1fr auto; gap: 18px; align-items: center; background: linear-gradient(135deg, #fff 0%, #fff3df 100%); }
+    .download-panel h3 { margin: 0 0 4px; font-size: 1.3rem; }
+    .download-panel p { margin: 0; color: var(--muted); }
+    footer { border-top: 1px solid var(--line); padding: 26px 0 42px; color: var(--muted); }
+    .backtop { position: fixed; right: 18px; bottom: 18px; z-index: 30; border-radius: 999px; width: 48px; height: 48px; padding: 0; background: var(--red); box-shadow: 0 14px 28px rgba(200,76,61,.22); }
+    .small-print { font-size: .9rem; }
+    @media (max-width: 900px) {
+      .highlights, .folder-grid, .checklist { grid-template-columns: 1fr; }
+      .day-card { grid-template-columns: 1fr; }
+      .download-panel { grid-template-columns: 1fr; }
+      .section-head { display: block; }
+      .hero-card { border-radius: 24px; }
+    }
+    @media print {
+      body { background: #fff; color: #000; font-size: 11pt; }
+      nav.quick, .actions, .backtop, button, .btn, .site-link { display: none !important; }
+      .container { width: 100%; }
+      header.hero { padding: 0 0 12px; }
+      .hero-card, .card, .highlight, .folder, .day-card { box-shadow: none; border-color: #ccc; background: #fff; }
+      .hero-card { padding: 18px; }
+      h1 { font-size: 24pt; }
+      h2 { font-size: 17pt; }
+      section { break-inside: avoid; margin: 20px 0; }
+      table { min-width: 0; font-size: 9.5pt; }
+      th, td { padding: 7px; }
+      .folder-grid, .checklist { grid-template-columns: repeat(2, 1fr); }
+      .day-label { color: #000; background: #eee; }
+      .download-panel { display: none; }
+      footer { padding-top: 10px; }
+    }
+  </style>
+</head>
+<body>
+  <header id="top" class="hero">
+    <div class="container">
+      <div class="hero-card">
+        <div class="flag-strip"><span class="dot green"></span><span class="dot white"></span><span class="dot red"></span> ITALY 2026 TRAVEL TOOLKIT</div>
+        <h1>2026 義大利 12 天自由行｜必備 App 與網站工具清單</h1>
+        <p class="subtitle">米蘭進出｜維洛納｜加爾達湖｜波札諾與西多洛米蒂｜威尼斯｜科莫湖</p>
+        <p class="lead">這份清單依照實際旅程路線整理，不求 App 越多越好，而是把交通、票券、地圖、翻譯、天氣、住宿與緊急備援準備好。出發前先裝好、登入好、收藏好，旅途中每天晚上只要檢查隔天交通與天氣即可。</p>
+        <div class="actions">
+          <button onclick="window.print()">列印／另存 PDF</button>
+          <button class="green" onclick="downloadHTML()">下載 HTML</button>
+          <a class="btn secondary" href="#checklist">前往出發前檢查表</a>
+        </div>
+        <div class="highlights">
+          <div class="highlight"><b>出發前先安裝並登入</b><span>交通與票券 App 現場才設定，最容易被網路或刷卡驗證卡住。</span></div>
+          <div class="highlight"><b>每晚檢查隔天交通與天氣</b><span>義大利湖區、山區、船班與罷工資訊，都建議前一晚再確認。</span></div>
+          <div class="highlight"><b>手機建立 5 個旅行資料夾</b><span>把航班、交通、湖區山區、旅行工具、緊急備援分開放，現場不慌亂。</span></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="quick">
+    <div class="container quick-inner">
+      <a href="#must">出發前必裝</a>
+      <a href="#transport">交通工具</a>
+      <a href="#tickets">景點票券</a>
+      <a href="#daily">每日建議</a>
+      <a href="#folders">手機資料夾</a>
+      <a href="#checklist">檢查表</a>
+      <a href="#download">下載／列印</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section id="must">
+      <div class="section-head">
+        <div><h2>一、出發前建議一定先安裝的 App</h2><p class="note">以全程會反覆使用、或現場臨時設定較麻煩的工具為優先。</p></div>
+      </div>
+      <div class="card table-wrap">
+        <table>
+          <thead><tr><th>App / 網站</th><th>旅程中用途</th><th>適用行程</th><th>官方連結</th></tr></thead>
+          <tbody>
+            <tr><td>EVA Air 長榮航空 App</td><td>查 BR095 / BR096 航班、線上報到、航班通知、選位與行程管理。</td><td><span class="tag">DAY0、DAY12</span></td><td><a class="site-link" href="https://www.evaair.com/" target="_blank" rel="noopener">前往官網</a></td></tr>
+            <tr><td>Milan Airports / Malpensa Airport</td><td>查 MXP T1 航班、登機櫃台、即時起降、機場地圖與服務位置。</td><td><span class="tag">DAY1、DAY12</span></td><td><a class="site-link" href="https://www.milanomalpensa-airport.com/" target="_blank" rel="noopener">前往官網</a></td></tr>
+            <tr><td>Google Maps</td><td>導航、收藏景點、離線地圖、步行／公車／地鐵路線。建議下載米蘭、維洛納、波札諾、威尼斯、科莫湖離線地圖。</td><td><span class="tag">全程</span></td><td><a class="site-link" href="https://www.google.com/maps" target="_blank" rel="noopener">前往官網</a></td></tr>
+            <tr><td>Google Translate</td><td>菜單、車站公告、售票機、民宿訊息翻譯；可搭配相機翻譯與離線翻譯包。</td><td><span class="tag">全程</span></td><td><a class="site-link" href="https://translate.google.com/" target="_blank" rel="noopener">前往官網</a></td></tr>
+            <tr><td>WhatsApp</td><td>與民宿房東、餐廳、接送或客服聯絡，歐洲住宿與餐廳常見。</td><td><span class="tag">全程</span></td><td><a class="site-link" href="https://www.whatsapp.com/" target="_blank" rel="noopener">前往官網</a></td></tr>
+            <tr><td>Airbnb / Booking.com / 飯店訂房 App</td><td>查入住說明、門鎖密碼、房東訊息、住宿確認與訂房憑證。</td><td><span class="tag">Verona、Bolzano、Mestre、Milano</span></td><td><a class="site-link" href="https://www.booking.com/" target="_blank" rel="noopener">Booking</a></td></tr>
+            <tr><td>112 Where ARE U</td><td>緊急救援備援，可撥打歐洲緊急電話 112 並傳送定位。</td><td><span class="tag">全程，尤其山區與湖區</span></td><td><a class="site-link" href="https://where.areu.lombardia.it/" target="_blank" rel="noopener">前往官網</a></td></tr>
+            <tr><td>MeteoAM / Meteo Aeronautica</td><td>義大利官方氣象工具，查城市與全義大利天氣。</td><td><span class="tag">全程</span></td><td><a class="site-link" href="https://www.meteoam.it/" target="_blank" rel="noopener">前往官網</a></td></tr>
+            <tr><td>South Tyrol Weather</td><td>查波札諾、西多洛米蒂山區天氣、雷雨風險與山區預報。</td><td><span class="tag">DAY3–DAY6</span></td><td><a class="site-link" href="https://weather.province.bz.it/" target="_blank" rel="noopener">前往官網</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="transport">
+      <div class="section-head"><div><h2>二、火車、地鐵、公車、水上巴士必備</h2><p class="note">你的行程橫跨義大利國鐵、倫巴底鐵路、南蒂羅爾公車與威尼斯水上巴士。</p></div></div>
+      <div class="card table-wrap">
+        <table>
+          <thead><tr><th>App / 網站</th><th>建議用途</th><th>你會用在哪裡</th><th>官方連結</th></tr></thead>
+          <tbody>
+            <tr><td>Trenitalia App / 官網</td><td>買義大利國鐵、Frecciarossa、高鐵、區間車票；查月台、誤點與即時車況。</td><td>米蘭→維洛納、維洛納→波札諾、波札諾→威尼斯、威尼斯→米蘭</td><td><a class="site-link" href="https://www.trenitalia.com/" target="_blank" rel="noopener">前往官網</a></td></tr>
+            <tr><td>Trenord App / 官網</td><td>查倫巴底大區火車、Malpensa Express、米蘭往科莫湖火車。</td><td>DAY1、DAY11、DAY12</td><td><a class="site-link" href="https://www.trenord.it/" target="_blank" rel="noopener">前往官網</a></td></tr>
+            <tr><td>Malpensa Express</td><td>專查米蘭市區 ↔ MXP 機場快線票價與班次。</td><td>DAY1、DAY12</td><td><a class="site-link" href="https://www.malpensaexpress.it/" target="_blank" rel="noopener">前往官網</a></td></tr>
+            <tr><td>ATM Milano</td><td>米蘭地鐵、公車、電車票券、路線、即時狀態。</td><td>DAY10、DAY12</td><td><a class="site-link" href="https://www.atm.it/" target="_blank" rel="noopener">前往官網</a></td></tr>
+            <tr><td>Ticket Bus Verona / ATV Verona</td><td>維洛納市區公車購票、查 24 / 73 等公車。</td><td>DAY1、DAY2</td><td><a class="site-link" href="https://www.atv.verona.it/" target="_blank" rel="noopener">前往官網</a></td></tr>
+            <tr><td>südtirolmobil</td><td>查南蒂羅爾公車、火車、350 / 180 / Renon 交通、即時時刻與線上票。</td><td>DAY3–DAY6</td><td><a class="site-link" href="https://www.suedtirolmobil.info/" target="_blank" rel="noopener">前往官網</a></td></tr>
+            <tr><td>AVM Venezia Official App</td><td>威尼斯 ACTV 公車、電車、水上巴士購票、驗票、查路線與碼頭時刻。</td><td>DAY8、DAY9</td><td><a class="site-link" href="https://actv.avmspa.it/" target="_blank" rel="noopener">前往官網</a></td></tr>
+            <tr><td>Venezia Unica</td><td>威尼斯交通票、博物館票、城市通行服務；適合預買 ACTV 24/48/72 小時票。</td><td>DAY8、DAY9</td><td><a class="site-link" href="https://www.veneziaunica.it/" target="_blank" rel="noopener">前往官網</a></td></tr>
+            <tr><td>Navigazione Laghi</td><td>加爾達湖、科莫湖船班、票價、購票與 PDF 時刻表。</td><td>DAY2、DAY11</td><td><a class="site-link" href="https://www.navigazionelaghi.it/" target="_blank" rel="noopener">前往官網</a></td></tr>
+            <tr><td>MIT Scioperi</td><td>查義大利火車、公車、地鐵、機場罷工公告。</td><td>出發前 1 週、每天睡前確認</td><td><a class="site-link" href="https://scioperi.mit.gov.it/" target="_blank" rel="noopener">前往官網</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="tickets">
+      <div class="section-head"><div><h2>三、景點與票券網站</h2><p class="note">行程中的城市卡、故居預約、纜車卡與湖區船班，建議集中收藏。</p></div></div>
+      <div class="card table-wrap">
+        <table>
+          <thead><tr><th>網站 / App</th><th>用途</th><th>適用行程</th><th>官方連結</th></tr></thead>
+          <tbody>
+            <tr><td>Visit Verona / VeronaCard</td><td>買或查 Verona Card 24h / 48h，適合圓形競技場、朗貝爾蒂塔、教堂與市區公車。</td><td>DAY1</td><td><a class="site-link" href="https://www.visitverona.it/" target="_blank" rel="noopener">前往官網</a></td></tr>
+            <tr><td>Casa di Giulietta 官方預約</td><td>茱麗葉故居入場時段預約；即使持 Verona Card 也建議先確認預約規則。</td><td>DAY1</td><td><a class="site-link" href="https://verona.midaticket.it/" target="_blank" rel="noopener">前往預約</a></td></tr>
+            <tr><td>Val Gardena / Gardena Card</td><td>查 Gardena Card、Seceda、Col Raiser、Dantercëpies 等纜車營運與價格。</td><td>DAY4–DAY6</td><td><a class="site-link" href="https://www.valgardena.it/" target="_blank" rel="noopener">前往官網</a></td></tr>
+            <tr><td>Val Gardena Weather</td><td>查 Seceda、Col Raiser、Selva、Passo Gardena 山區雷雨與纜車日天氣。</td><td>DAY4–DAY6</td><td><a class="site-link" href="https://www.valgardena.it/en/weather/" target="_blank" rel="noopener">前往天氣</a></td></tr>
+            <tr><td>Navigazione Laghi Garda / Como</td><td>加爾達湖 Basso Lago 船班、科莫湖 Varenna–Bellagio–Como 船班。</td><td>DAY2、DAY11</td><td><a class="site-link" href="https://www.navigazionelaghi.it/" target="_blank" rel="noopener">前往官網</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="daily">
+      <div class="section-head"><div><h2>四、依每日行程的使用建議</h2><p class="note">照著每日路線開對 App，就不必在現場臨時翻找。</p></div></div>
+      <div class="timeline">
+        <article class="day-card"><div class="day-label">DAY0–DAY1</div><div><h3>桃園 → MXP → 米蘭中央 → 維洛納</h3><p>機場入境、機場快線、米蘭中央轉車、維洛納市區交通與 Verona Card 景點集中在這一天。</p><div class="chips"><span class="chip">EVA Air</span><span class="chip">Milan Airports</span><span class="chip">Trenord / Malpensa Express</span><span class="chip">Trenitalia</span><span class="chip">Google Maps</span><span class="chip">Ticket Bus Verona</span><span class="chip">VeronaCard</span><span class="chip">Casa di Giulietta</span></div></div></article>
+        <article class="day-card"><div class="day-label">DAY2</div><div><h3>加爾達湖</h3><p>Verona 出發，搭區間車到湖區，再以船班串連湖濱小鎮。</p><div class="chips"><span class="chip">Trenitalia</span><span class="chip">ATV Verona</span><span class="chip">Ticket Bus Verona</span><span class="chip">Navigazione Laghi</span><span class="chip">Google Maps</span></div></div></article>
+        <article class="day-card"><div class="day-label">DAY3–DAY6</div><div><h3>波札諾與西多洛米蒂</h3><p>山區公車、纜車、天氣變化是重點，尤其 Seceda、Col Raiser、Monte Pana、Dantercëpies 與 Renon 小火車。</p><div class="chips"><span class="chip">südtirolmobil</span><span class="chip">Val Gardena</span><span class="chip">Gardena Card</span><span class="chip">South Tyrol Weather</span><span class="chip">Google Maps</span><span class="chip">Google Translate</span></div></div></article>
+        <article class="day-card"><div class="day-label">DAY7</div><div><h3>波札諾 → 威尼斯 Mestre</h3><p>以退房、搭火車、入住 Mestre 民宿、洗衣採買為主，保留車票與民宿入住指示最重要。</p><div class="chips"><span class="chip">Trenitalia</span><span class="chip">Google Maps</span><span class="chip">住宿 App</span><span class="chip">WhatsApp</span></div></div></article>
+        <article class="day-card"><div class="day-label">DAY8–DAY9</div><div><h3>威尼斯外島與本島</h3><p>ACTV 兩日券、水上巴士、Mestre 公車與碼頭移動密集，AVM Venezia 是核心工具。</p><div class="chips"><span class="chip">AVM Venezia</span><span class="chip">Venezia Unica</span><span class="chip">Google Maps</span><span class="chip">Google Translate</span></div></div></article>
+        <article class="day-card"><div class="day-label">DAY10</div><div><h3>威尼斯 → 米蘭市區</h3><p>到 Milano Centrale 後，會以地鐵連接 Duomo、Castello Sforzesco、Navigli 等區域。</p><div class="chips"><span class="chip">Trenitalia</span><span class="chip">ATM Milano</span><span class="chip">Google Maps</span><span class="chip">Google Translate</span></div></div></article>
+        <article class="day-card"><div class="day-label">DAY11</div><div><h3>米蘭 → 科莫湖</h3><p>火車與船班要搭配確認，尤其 Varenna、Bellagio、Como 的船班銜接。</p><div class="chips"><span class="chip">Trenord</span><span class="chip">Navigazione Laghi</span><span class="chip">Google Maps</span><span class="chip">天氣 App</span></div></div></article>
+        <article class="day-card"><div class="day-label">DAY12</div><div><h3>米蘭 → MXP → 台北</h3><p>前一晚準備好機場快線、登機資料、機場資訊與行李安排。</p><div class="chips"><span class="chip">ATM Milano</span><span class="chip">Trenord</span><span class="chip">Malpensa Express</span><span class="chip">Milan Airports</span><span class="chip">EVA Air</span></div></div></article>
+      </div>
+    </section>
+
+    <section id="folders">
+      <div class="section-head"><div><h2>五、手機建立 5 個資料夾</h2><p class="note">把工具照情境分類，現場要找 App 時會快很多。</p></div></div>
+      <div class="folder-grid">
+        <div class="folder"><div class="icon"></div><h3>航班機場</h3><p>EVA Air、Milan Airports、Google Wallet / Apple Wallet</p></div>
+        <div class="folder"><div class="icon"></div><h3>義大利交通</h3><p>Trenitalia、Trenord、ATM Milano、Ticket Bus Verona、südtirolmobil、AVM Venezia</p></div>
+        <div class="folder"><div class="icon"></div><h3>湖區與山區</h3><p>Navigazione Laghi、Val Gardena、South Tyrol Weather、MeteoAM</p></div>
+        <div class="folder"><div class="icon"></div><h3>旅行工具</h3><p>Google Maps、Google Translate、WhatsApp、住宿 App</p></div>
+        <div class="folder"><div class="icon"></div><h3>緊急備援</h3><p>112 Where ARE U、旅遊保險、護照影本、機票 PDF、住宿確認信</p></div>
+      </div>
+    </section>
+
+    <section id="checklist">
+      <div class="section-head"><div><h2>六、出發前檢查表</h2><p class="note">可直接勾選；勾選狀態會保存在同一瀏覽器中。</p></div><button class="btn secondary" onclick="resetChecks()">清除勾選</button></div>
+      <div class="card checklist" id="checklistBox">
+        <div class="check-item"><input type="checkbox" id="c1"><label for="c1">出發前 7 天：交通 App 登入並綁定信用卡<small>Trenitalia、Trenord、AVM Venezia、südtirolmobil、ATM Milano。</small></label></div>
+        <div class="check-item"><input type="checkbox" id="c2"><label for="c2">出發前 7 天：票券與住宿憑證存 PDF<small>火車票、船票、纜車票、住宿確認信、保險資料。</small></label></div>
+        <div class="check-item"><input type="checkbox" id="c3"><label for="c3">出發前 3 天：下載 Google Maps 離線地圖<small>米蘭、維洛納、波札諾、威尼斯、科莫湖。</small></label></div>
+        <div class="check-item"><input type="checkbox" id="c4"><label for="c4">出發前 3 天：下載義大利文離線翻譯包<small>Google Translate 可先準備義大利文與英文。</small></label></div>
+        <div class="check-item"><input type="checkbox" id="c5"><label for="c5">出發前 1 天：查 MIT Scioperi 交通罷工<small>特別留意火車、公車、地鐵與機場交通。</small></label></div>
+        <div class="check-item"><input type="checkbox" id="c6"><label for="c6">出發前 1 天：查山區天氣與湖區船班<small>西多洛米蒂與科莫湖、加爾達湖建議再確認。</small></label></div>
+        <div class="check-item"><input type="checkbox" id="c7"><label for="c7">每天晚上：確認隔天火車／公車／船班／天氣<small>把隔天要開的 App 先放到手機首頁。</small></label></div>
+        <div class="check-item"><input type="checkbox" id="c8"><label for="c8">每天晚上：手機與行動電源充滿電<small>山區、湖區與威尼斯移動日尤其重要。</small></label></div>
+      </div>
+    </section>
+
+    <section id="download">
+      <div class="card download-panel">
+        <div>
+          <h3>下載與保存</h3>
+          <p>可直接列印或另存 PDF；也可下載成單一 HTML 檔，之後離線開啟查看。</p>
+        </div>
+        <div class="actions" style="margin:0">
+          <button onclick="window.print()">列印／另存 PDF</button>
+          <button class="green" onclick="downloadHTML()">下載 HTML</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container small-print">
+      <p><strong>使用提醒：</strong>票價、營運時間、船班、公車班次、纜車開放狀態與交通罷工資訊都可能異動；實際出發前請以官方網站與 App 最新資訊為準。</p>
+      <p>製作目的：2026 義大利 12 天自由行旅程工具整理。</p>
+    </div>
+  </footer>
+
+  <button class="backtop" onclick="location.hash='top'" aria-label="回到頂部">↑</button>
+
+  <script>
+    const checks = Array.from(document.querySelectorAll('#checklistBox input[type="checkbox"]'));
+    const storageKey = 'italy2026Checklist';
+    function loadChecks() {
+      try {
+        const saved = JSON.parse(localStorage.getItem(storageKey) || '{}');
+        checks.forEach(c => { c.checked = !!saved[c.id]; });
+      } catch (e) { /* ignore */ }
+    }
+    function saveChecks() {
+      const state = {};
+      checks.forEach(c => state[c.id] = c.checked);
+      localStorage.setItem(storageKey, JSON.stringify(state));
+    }
+    function resetChecks() {
+      checks.forEach(c => c.checked = false);
+      saveChecks();
+    }
+    checks.forEach(c => c.addEventListener('change', saveChecks));
+    loadChecks();
+
+    function downloadHTML() {
+      const html = '<!doctype html>\n' + document.documentElement.outerHTML;
+      const blob = new Blob([html], { type: 'text/html;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'italy-2026-app-websites.html';
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+    }
+  </script>
+</body>
+</html>
